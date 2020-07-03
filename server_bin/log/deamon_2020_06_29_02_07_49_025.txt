@@ -1,0 +1,127 @@
+Mon Jun 29 02:08:29 2020 RECEIVED <iq id="qxmpp281" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:08:29 2020 SENT <iq id="qxmpp281" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:09:29 2020 RECEIVED <iq id="qxmpp283" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:09:29 2020 SENT <iq id="qxmpp283" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:10:30 2020 RECEIVED <iq id="qxmpp285" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:10:30 2020 SENT <iq id="qxmpp285" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:10:34 2020 DEBUG Debug: settle work is working ...:0
+Mon Jun 29 02:11:29 2020 RECEIVED <iq id="qxmpp287" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:11:29 2020 SENT <iq id="qxmpp287" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:12:30 2020 RECEIVED <iq id="qxmpp289" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:12:30 2020 SENT <iq id="qxmpp289" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:13:30 2020 RECEIVED <iq id="qxmpp291" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:13:30 2020 SENT <iq id="qxmpp291" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:14:29 2020 RECEIVED <iq id="qxmpp293" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:14:29 2020 SENT <iq id="qxmpp293" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:15:30 2020 RECEIVED <iq id="qxmpp295" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:15:30 2020 SENT <iq id="qxmpp295" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:16:29 2020 RECEIVED <iq id="qxmpp297" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:16:29 2020 SENT <iq id="qxmpp297" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:17:30 2020 RECEIVED <iq id="qxmpp299" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:17:30 2020 SENT <iq id="qxmpp299" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:18:30 2020 RECEIVED <iq id="qxmpp301" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:18:30 2020 SENT <iq id="qxmpp301" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:19:30 2020 RECEIVED <iq id="qxmpp303" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:19:30 2020 SENT <iq id="qxmpp303" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:20:29 2020 RECEIVED <iq id="qxmpp305" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:20:29 2020 SENT <iq id="qxmpp305" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:21:30 2020 RECEIVED <iq id="qxmpp307" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:21:30 2020 SENT <iq id="qxmpp307" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:22:30 2020 RECEIVED <iq id="qxmpp309" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:22:30 2020 SENT <iq id="qxmpp309" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:23:12 2020 RECEIVED <iq id="qxmpp311" type="get"><time xmlns="urn:xmpp:time"/></iq>
+Mon Jun 29 02:23:12 2020 SENT <iq id="qxmpp311" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-06-29T06:23:12.483Z</utc></time></iq>
+Mon Jun 29 02:23:30 2020 RECEIVED <iq id="qxmpp313" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:23:30 2020 SENT <iq id="qxmpp313" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:24:30 2020 RECEIVED <iq id="qxmpp315" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:24:30 2020 SENT <iq id="qxmpp315" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:25:29 2020 RECEIVED <iq id="qxmpp317" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:25:29 2020 SENT <iq id="qxmpp317" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:25:35 2020 DEBUG Debug: settle work is working ...:0
+Mon Jun 29 02:26:29 2020 RECEIVED <iq id="qxmpp319" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:26:29 2020 SENT <iq id="qxmpp319" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:27:30 2020 RECEIVED <iq id="qxmpp321" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:27:30 2020 SENT <iq id="qxmpp321" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:28:30 2020 RECEIVED <iq id="qxmpp323" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:28:30 2020 SENT <iq id="qxmpp323" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:29:29 2020 RECEIVED <iq id="qxmpp325" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:29:29 2020 SENT <iq id="qxmpp325" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:30:30 2020 RECEIVED <iq id="qxmpp327" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:30:30 2020 SENT <iq id="qxmpp327" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:31:29 2020 RECEIVED <iq id="qxmpp329" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:31:29 2020 SENT <iq id="qxmpp329" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:32:30 2020 RECEIVED <iq id="qxmpp331" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:32:30 2020 SENT <iq id="qxmpp331" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:33:29 2020 RECEIVED <iq id="qxmpp333" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:33:29 2020 SENT <iq id="qxmpp333" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:34:30 2020 RECEIVED <iq id="qxmpp335" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:34:30 2020 SENT <iq id="qxmpp335" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:35:29 2020 RECEIVED <iq id="qxmpp337" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:35:29 2020 SENT <iq id="qxmpp337" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:36:30 2020 RECEIVED <iq id="qxmpp339" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:36:30 2020 SENT <iq id="qxmpp339" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:37:30 2020 RECEIVED <iq id="qxmpp341" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:37:30 2020 SENT <iq id="qxmpp341" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:38:30 2020 RECEIVED <iq id="qxmpp343" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:38:30 2020 SENT <iq id="qxmpp343" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:39:30 2020 RECEIVED <iq id="qxmpp345" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:39:30 2020 SENT <iq id="qxmpp345" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:40:29 2020 RECEIVED <iq id="qxmpp347" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:40:29 2020 SENT <iq id="qxmpp347" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:40:35 2020 DEBUG Debug: settle work is working ...:0
+Mon Jun 29 02:41:30 2020 RECEIVED <iq id="qxmpp349" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:41:30 2020 SENT <iq id="qxmpp349" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:42:29 2020 RECEIVED <iq id="qxmpp351" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:42:29 2020 SENT <iq id="qxmpp351" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:43:30 2020 RECEIVED <iq id="qxmpp353" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:43:30 2020 SENT <iq id="qxmpp353" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:44:30 2020 RECEIVED <iq id="qxmpp355" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:44:30 2020 SENT <iq id="qxmpp355" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:45:30 2020 RECEIVED <iq id="qxmpp357" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:45:30 2020 SENT <iq id="qxmpp357" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:46:30 2020 RECEIVED <iq id="qxmpp359" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:46:30 2020 SENT <iq id="qxmpp359" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:47:30 2020 RECEIVED <iq id="qxmpp361" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:47:30 2020 SENT <iq id="qxmpp361" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:48:30 2020 RECEIVED <iq id="qxmpp363" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:48:30 2020 SENT <iq id="qxmpp363" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:49:30 2020 RECEIVED <iq id="qxmpp365" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:49:30 2020 SENT <iq id="qxmpp365" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:50:29 2020 RECEIVED <iq id="qxmpp367" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:50:29 2020 SENT <iq id="qxmpp367" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:51:30 2020 RECEIVED <iq id="qxmpp369" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:51:30 2020 SENT <iq id="qxmpp369" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:52:29 2020 RECEIVED <iq id="qxmpp371" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:52:29 2020 SENT <iq id="qxmpp371" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:53:30 2020 RECEIVED <iq id="qxmpp373" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:53:30 2020 SENT <iq id="qxmpp373" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:54:30 2020 RECEIVED <iq id="qxmpp375" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:54:30 2020 SENT <iq id="qxmpp375" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:55:30 2020 RECEIVED <iq id="qxmpp377" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:55:30 2020 SENT <iq id="qxmpp377" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:55:35 2020 DEBUG Debug: settle work is working ...:0
+Mon Jun 29 02:56:30 2020 RECEIVED <iq id="qxmpp379" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:56:30 2020 SENT <iq id="qxmpp379" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:57:30 2020 RECEIVED <iq id="qxmpp381" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:57:30 2020 SENT <iq id="qxmpp381" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:58:30 2020 RECEIVED <iq id="qxmpp383" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:58:30 2020 SENT <iq id="qxmpp383" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 02:59:30 2020 RECEIVED <iq id="qxmpp385" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 02:59:30 2020 SENT <iq id="qxmpp385" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 03:00:30 2020 RECEIVED <iq id="qxmpp387" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 03:00:30 2020 SENT <iq id="qxmpp387" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 03:01:30 2020 RECEIVED <iq id="qxmpp389" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 03:01:30 2020 SENT <iq id="qxmpp389" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 03:02:30 2020 RECEIVED <iq id="qxmpp391" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 03:02:30 2020 SENT <iq id="qxmpp391" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 03:03:30 2020 RECEIVED <iq id="qxmpp393" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 03:03:30 2020 SENT <iq id="qxmpp393" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 03:04:30 2020 RECEIVED <iq id="qxmpp395" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 03:04:30 2020 SENT <iq id="qxmpp395" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 03:05:29 2020 RECEIVED <iq id="qxmpp397" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 03:05:29 2020 SENT <iq id="qxmpp397" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 03:06:30 2020 RECEIVED <iq id="qxmpp399" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 03:06:30 2020 SENT <iq id="qxmpp399" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 03:07:30 2020 RECEIVED <iq id="qxmpp401" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Mon Jun 29 03:07:30 2020 SENT <iq id="qxmpp401" to="station1@lianup/LianUp" type="result"/>
+Mon Jun 29 03:07:49 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_06_29_03_07_49_035.txt":0

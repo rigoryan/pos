@@ -1,0 +1,921 @@
+Sat May 23 22:16:13 2020 WARNING Socket error: The remote host closed the connection
+Sat May 23 22:16:13 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 56281
+Sat May 23 22:16:46 2020 INFO Incoming client connection from ::1 52732
+Sat May 23 22:16:46 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 23 22:16:46 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="cxc1gJotGqvuQgD7c043oGxN3kto1sje" from="lianup" version="1.0" xml:lang="en">
+Sat May 23 22:16:46 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Sat May 23 22:16:46 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Sat May 23 22:16:46 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9IlFBWkFLbW5sd1FUem12dHJFS1NaaGs3a0IyajNiYWlSTGx2K2N3bkNjMlU9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Sat May 23 22:16:46 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9ImNPVFlqTis2ek14RnBPTlFkWEtKdjFLUmw2NHNQRnltZTJHWGFwT2hBMHc9IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9IlFBWkFLbW5sd1FUem12dHJFS1NaaGs3a0IyajNiYWlSTGx2K2N3bkNjMlU9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9NGQxMmEyNTgzYzQxMzFhNmRmM2VmZWY1ODlkMDc1YWYsdXNlcm5hbWU9c3RhdGlvbjE=</response>
+Sat May 23 22:16:46 2020 DEBUG Debug: received password request :  "station1@lianup"   "":0
+Sat May 23 22:16:46 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='station1@lianup'":0
+Sat May 23 22:16:46 2020 DEBUG Debug: is valid true:0
+Sat May 23 22:16:46 2020 DEBUG Debug: passcode is :  "1234":0
+Sat May 23 22:16:46 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD1jOTg4MGY0ZDExZTk4NDdkNzNiYTY0ZjVkMjc1M2Y0Nw==</challenge>
+Sat May 23 22:16:46 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 23 22:16:46 2020 INFO Authentication succeeded for 'station1@lianup' from ::1 52732
+Sat May 23 22:16:46 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 23 22:16:46 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 23 22:16:46 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="isBUdPzI76tk2xCSg8gDYEIaKdzwm5Lf" from="lianup" version="1.0" xml:lang="en">
+Sat May 23 22:16:46 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Sat May 23 22:16:46 2020 RECEIVED <iq id="qxmpp3" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Sat May 23 22:16:46 2020 SENT <iq id="qxmpp3" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>station1@lianup/LianUp</jid></bind></iq>
+Sat May 23 22:16:46 2020 RECEIVED <iq id="qxmpp5" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Sat May 23 22:16:46 2020 SENT <iq id="qxmpp5" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:16:46 2020 RECEIVED <iq id="qxmpp7" to="station1@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp8" type="get"><time xmlns="urn:xmpp:time"/></iq><iq id="qxmpp9" from="station1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Sat May 23 22:16:46 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:16:46 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:16:46 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:16:46 2020 SENT <iq id="qxmpp7" to="station1@lianup/LianUp" from="station1@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>station1</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:46 2020 SENT <iq id="qxmpp8" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-05-24T02:16:46.950Z</utc></time></iq>
+Sat May 23 22:16:46 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 23 22:16:46 2020 SENT <iq id="qxmpp9" to="station1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Sat May 23 22:16:46 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 23 22:16:46 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Sat May 23 22:16:48 2020 RECEIVED <iq id="qxmpp16" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:48 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:16:48 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:16:48 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:16:48 2020 SENT <iq id="qxmpp16" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:49 2020 RECEIVED <iq id="qxmpp22" to="juny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp23" to="leowang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp24" to="liang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp25" to="lindenglan@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:16:49 2020 SENT <iq id="qxmpp22" to="station1@lianup/LianUp" from="juny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>junny</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:16:49 2020 SENT <iq id="qxmpp23" to="station1@lianup/LianUp" from="leowang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>leo</GIVEN><FAMILY>wang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:16:49 2020 SENT <iq id="qxmpp24" to="station1@lianup/LianUp" from="liang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>liang</GIVEN><FAMILY>jiang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:16:49 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:16:49 2020 SENT <iq id="qxmpp25" to="station1@lianup/LianUp" from="lindenglan@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>lindeng</GIVEN><FAMILY>lan</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:51 2020 RECEIVED <iq id="qxmpp38" type="get"><query xmlns="urn:xmpp:lutasklogsearch" sql="SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup'" start="2020-05-23 05:00:00" end="2020-05-24 05:00:00"/></iq>
+Sat May 23 22:16:51 2020 DEBUG Debug: "SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup' AND start BETWEEN STR_TO_DATE('2020-05-23 05:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-24 05:00:00', '%Y-%m-%d %H:%i:%s')":0
+Sat May 23 22:16:51 2020 SENT <iq id="qxmpp38" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:lutasklogsearch" sql="" start="" end=""/></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp40" to="DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp40" to="station1@lianup/LianUp" from="DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp41" to="DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp41" to="station1@lianup/LianUp" from="DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp48" to="DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp48" to="station1@lianup/LianUp" from="DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp52" to="DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp52" to="station1@lianup/LianUp" from="DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp56" to="DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp56" to="station1@lianup/LianUp" from="DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp60" to="DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp60" to="station1@lianup/LianUp" from="DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp64" to="DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp64" to="station1@lianup/LianUp" from="DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp68" to="DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp68" to="station1@lianup/LianUp" from="DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp72" to="DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp72" to="station1@lianup/LianUp" from="DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp76" to="DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp76" to="station1@lianup/LianUp" from="DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp77" to="DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp77" to="station1@lianup/LianUp" from="DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp84" to="DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp84" to="station1@lianup/LianUp" from="DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp88" to="DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp88" to="station1@lianup/LianUp" from="DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp92" to="DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp92" to="station1@lianup/LianUp" from="DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp96" to="DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp96" to="station1@lianup/LianUp" from="DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp100" to="PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp100" to="station1@lianup/LianUp" from="PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp104" to="DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp104" to="station1@lianup/LianUp" from="DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp108" to="DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp108" to="station1@lianup/LianUp" from="DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp112" to="DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp112" to="station1@lianup/LianUp" from="DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp116" to="DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp116" to="station1@lianup/LianUp" from="DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp120" to="DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp120" to="station1@lianup/LianUp" from="DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp124" to="DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp124" to="station1@lianup/LianUp" from="DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp128" to="DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp128" to="station1@lianup/LianUp" from="DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 RECEIVED <iq id="qxmpp132" to="DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:16:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:16:52 2020 SENT <iq id="qxmpp132" to="station1@lianup/LianUp" from="DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:53 2020 RECEIVED <iq id="qxmpp136" to="DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:53 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:16:53 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:16:53 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:16:53 2020 SENT <iq id="qxmpp136" to="station1@lianup/LianUp" from="DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:54 2020 RECEIVED <iq id="qxmpp140" type="set"><query xmlns="urn:xmpp:luuser"><item bjid="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" passcode="{2a271251-f452-4c00-bc49-eec7be9abf14}"/></query></iq>
+Sat May 23 22:16:54 2020 SENT <iq id="qxmpp140" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:luuser"><item id="4225" bjid="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" passcode="{2a271251-f452-4c00-bc49-eec7be9abf14}"/></query></iq>
+Sat May 23 22:16:54 2020 RECEIVED <iq id="qxmpp142" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" kind="DELIVERY" last_visit="Sat May 23 22:16:54 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:16:54 2020 SENT <iq id="qxmpp142" to="station1@lianup" type="result"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" id="{856b4810-cd89-4d89-b6df-3d87b8cb55c8}" kind="DELIVERY" last_visit="Sat May 23 22:16:54 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:16:54 2020 RECEIVED <iq id="qxmpp144" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item lhs="{e15c86ac-642f-47d8-843f-be0eb2c3afce}" rhs="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:16:54"/></query></iq>
+Sat May 23 22:16:54 2020 SENT <iq id="qxmpp144" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item id="{be5f9d03-6b0e-40d0-9bdd-07067ffeed21}" lhs="{e15c86ac-642f-47d8-843f-be0eb2c3afce}" rhs="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:16:54"/></query></iq>
+Sat May 23 22:16:54 2020 RECEIVED <iq id="qxmpp146" to="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:54 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:16:54 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:16:54 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:16:54 2020 SENT <iq id="qxmpp146" to="station1@lianup/LianUp" from="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:16:57 2020 RECEIVED <iq id="qxmpp150" from="station1@lianup" type="set"><query store="crab_du_jour@lianup" xmlns="urn:xmpp:luorderdetails"><item category_id="{b06354e4-d167-4ea4-8656-bd6cf3ce7484}" content_id="{0bd772f5-b653-4e67-b63b-6612b5de1b62}" count="1" created_on="2020-05-23 22:16:57" id="{dd644134-d881-42c9-9e00-73736404b65b}" kind="SUB_PRICE" menu_id="{450aa6e7-6aaf-4ea5-bd83-1db6a8807e56}" name="Hush Puppies (10)" order_id="{e15c86ac-642f-47d8-843f-be0eb2c3afce}" status="OPEN" store="crab_du_jour@lianup" tax="0" unit_price="3.5"/></query></iq><iq id="qxmpp151" from="station1@lianup" type="set"><query xmlns="urn:xmpp:luorder" store="crab_du_jour@lianup"><item store="crab_du_jour@lianup" order_id="{e15c86ac-642f-47d8-843f-be0eb2c3afce}" status="OPEN" price_no_tax="3.5" price_with_tax="3.5" tax_price="0" tax="1" discount_by_percentage="0" discount_by_credit="0" gratitude_by_percentage="0" gratitude_by_credit="0" open="1" kind="DINEIN_TOGO" sequence="13161" daily_sequence="47" server="juny@lianup" cashier="juny@lianup" num_of_adult="0" num_of_senior="0" num_of_kid="0" num_of_free="0" created_on="2020-05-23 22:16:53"/></query></iq>
+Sat May 23 22:16:57 2020 SENT <iq id="qxmpp150" to="station1@lianup" from="station1@lianup" type="result"><query store="crab_du_jour@lianup" xmlns="urn:xmpp:luorderdetails"><item category_id="{b06354e4-d167-4ea4-8656-bd6cf3ce7484}" content_id="{0bd772f5-b653-4e67-b63b-6612b5de1b62}" count="1" created_on="2020-05-23 22:16:57" id="{dd644134-d881-42c9-9e00-73736404b65b}" kind="SUB_PRICE" menu_id="{450aa6e7-6aaf-4ea5-bd83-1db6a8807e56}" name="Hush Puppies (10)" order_id="{e15c86ac-642f-47d8-843f-be0eb2c3afce}" status="OPEN" store="crab_du_jour@lianup" tax="0" unit_price="3.5"/></query></iq>
+Sat May 23 22:16:57 2020 DEBUG Debug: updating order details ...  QSet("{e15c86ac-642f-47d8-843f-be0eb2c3afce}"):0
+Sat May 23 22:16:57 2020 DEBUG Debug: updating order details ...  "{e15c86ac-642f-47d8-843f-be0eb2c3afce}":0
+Sat May 23 22:16:57 2020 SENT <iq id="qxmpp150" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:luorder" store="crab_du_jour@lianup"/></iq>
+Sat May 23 22:16:57 2020 DEBUG Debug: daily seq:  47:0
+Sat May 23 22:16:57 2020 SENT <iq id="qxmpp151" to="station1@lianup" from="station1@lianup" type="set"><query xmlns="urn:xmpp:luorder" store="crab_du_jour@lianup"><item store="crab_du_jour@lianup" order_id="{e15c86ac-642f-47d8-843f-be0eb2c3afce}" status="OPEN" price_no_tax="3.5" price_with_tax="3.5" tax_price="0" tax="1" discount_by_percentage="0" discount_by_credit="0" gratitude_by_percentage="0" gratitude_by_credit="0" open="1" kind="DINEIN_TOGO" sequence="13161" daily_sequence="47" server="juny@lianup" cashier="juny@lianup" num_of_adult="0" num_of_senior="0" num_of_kid="0" num_of_free="0" created_on="2020-05-23 22:16:53"/></query></iq>
+Sat May 23 22:17:46 2020 RECEIVED <iq id="qxmpp155" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:17:46 2020 SENT <iq id="qxmpp155" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:18:01 2020 DEBUG Debug: settle work is working ...:0
+Sat May 23 22:18:46 2020 RECEIVED <iq id="qxmpp157" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:18:46 2020 SENT <iq id="qxmpp157" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:19:18 2020 RECEIVED <iq id="qxmpp159" from="station1@lianup" type="set"><query store="crab_du_jour@lianup" version_control="0" version="" xmlns="urn:xmpp:lumenurows"><item id="{e15c86ac-642f-47d8-843f-be0eb2c3afce}" is_versioned="0" kind="ORDER_LOCK" rows="{&quot;station&quot;:&quot;&quot;,&quot;bjid&quot;:&quot;&quot;}" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:19:18 2020 SENT <iq id="qxmpp159" to="station1@lianup" type="result"><query store="crab_du_jour@lianup" version_control="0" version="{}" xmlns="urn:xmpp:lumenurows"><item id="{e15c86ac-642f-47d8-843f-be0eb2c3afce}" is_versioned="0" kind="ORDER_LOCK" rows="{&quot;station&quot;:&quot;&quot;,&quot;bjid&quot;:&quot;&quot;}" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:19:46 2020 RECEIVED <iq id="qxmpp162" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:19:46 2020 SENT <iq id="qxmpp162" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:20:03 2020 WARNING Socket error: The remote host closed the connection
+Sat May 23 22:20:03 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 52732
+Sat May 23 22:21:13 2020 INFO Incoming client connection from ::1 52951
+Sat May 23 22:21:13 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 23 22:21:13 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="wxtVRaeHXLCGGpBGJc2bmUqMuWoj8e1R" from="lianup" version="1.0" xml:lang="en">
+Sat May 23 22:21:13 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Sat May 23 22:21:13 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Sat May 23 22:21:13 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9IkN6VXRjRlhFTERIUEtXNWllaUNMUGJ5L0JHMTVIcHNQMnRBVjRPYU1TdGc9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Sat May 23 22:21:13 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9IncrUlBIM1dWRGUxNTBQY1FlbTl1OFJEZEViOFA0VTlMT2dwaHJuRGgybEE9IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9IkN6VXRjRlhFTERIUEtXNWllaUNMUGJ5L0JHMTVIcHNQMnRBVjRPYU1TdGc9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9ZDVjYjFlZTQwOWRjZWIyOWNmMTg4MTU0M2NiMTI2MjMsdXNlcm5hbWU9c3RhdGlvbjE=</response>
+Sat May 23 22:21:13 2020 DEBUG Debug: received password request :  "station1@lianup"   "":0
+Sat May 23 22:21:13 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='station1@lianup'":0
+Sat May 23 22:21:13 2020 DEBUG Debug: is valid true:0
+Sat May 23 22:21:13 2020 DEBUG Debug: passcode is :  "1234":0
+Sat May 23 22:21:13 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD02Y2U4YTUzZDA5MGQzZjk5YmZhNjJmZjZhNDNmZDY3NQ==</challenge>
+Sat May 23 22:21:13 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 23 22:21:13 2020 INFO Authentication succeeded for 'station1@lianup' from ::1 52951
+Sat May 23 22:21:13 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 23 22:21:13 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 23 22:21:13 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="JeaBvOlpE16QKo2eAZETqORvizxqrFPE" from="lianup" version="1.0" xml:lang="en">
+Sat May 23 22:21:13 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Sat May 23 22:21:13 2020 RECEIVED <iq id="qxmpp3" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Sat May 23 22:21:13 2020 SENT <iq id="qxmpp3" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>station1@lianup/LianUp</jid></bind></iq>
+Sat May 23 22:21:13 2020 RECEIVED <iq id="qxmpp5" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Sat May 23 22:21:13 2020 SENT <iq id="qxmpp5" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:21:13 2020 RECEIVED <iq id="qxmpp7" to="station1@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp8" type="get"><time xmlns="urn:xmpp:time"/></iq><iq id="qxmpp9" from="station1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Sat May 23 22:21:13 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:21:13 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:21:13 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:21:13 2020 SENT <iq id="qxmpp7" to="station1@lianup/LianUp" from="station1@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>station1</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:13 2020 SENT <iq id="qxmpp8" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-05-24T02:21:13.884Z</utc></time></iq>
+Sat May 23 22:21:13 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 23 22:21:13 2020 SENT <iq id="qxmpp9" to="station1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Sat May 23 22:21:13 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 23 22:21:13 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Sat May 23 22:21:15 2020 RECEIVED <iq id="qxmpp16" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:15 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:21:15 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:21:15 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:21:15 2020 SENT <iq id="qxmpp16" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:15 2020 RECEIVED <iq id="qxmpp19" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp20" to="juny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp21" to="leowang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp22" to="liang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp23" to="lindenglan@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:15 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:21:15 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:21:15 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:21:15 2020 SENT <iq id="qxmpp19" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:15 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:21:15 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:21:15 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:21:15 2020 SENT <iq id="qxmpp20" to="station1@lianup/LianUp" from="juny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>junny</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:16 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:21:16 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:21:16 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:21:16 2020 SENT <iq id="qxmpp21" to="station1@lianup/LianUp" from="leowang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>leo</GIVEN><FAMILY>wang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:16 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:21:16 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:21:16 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:21:16 2020 SENT <iq id="qxmpp22" to="station1@lianup/LianUp" from="liang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>liang</GIVEN><FAMILY>jiang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:16 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:21:16 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:21:16 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:21:16 2020 SENT <iq id="qxmpp23" to="station1@lianup/LianUp" from="lindenglan@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>lindeng</GIVEN><FAMILY>lan</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:18 2020 RECEIVED <iq id="qxmpp41" type="get"><query xmlns="urn:xmpp:lutasklogsearch" sql="SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup'" start="2020-05-23 05:00:00" end="2020-05-24 05:00:00"/></iq>
+Sat May 23 22:21:18 2020 DEBUG Debug: "SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup' AND start BETWEEN STR_TO_DATE('2020-05-23 05:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-24 05:00:00', '%Y-%m-%d %H:%i:%s')":0
+Sat May 23 22:21:18 2020 SENT <iq id="qxmpp41" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:lutasklogsearch" sql="" start="" end=""/></iq>
+Sat May 23 22:21:18 2020 RECEIVED <iq id="qxmpp43" to="DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:18 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:21:18 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:21:18 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:21:18 2020 SENT <iq id="qxmpp43" to="station1@lianup/LianUp" from="DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:18 2020 RECEIVED <iq id="qxmpp47" to="DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:18 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:21:18 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:21:18 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:21:18 2020 SENT <iq id="qxmpp47" to="station1@lianup/LianUp" from="DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp51" to="DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp51" to="station1@lianup/LianUp" from="DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp55" to="DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp55" to="station1@lianup/LianUp" from="DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp59" to="DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp59" to="station1@lianup/LianUp" from="DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp63" to="DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp63" to="station1@lianup/LianUp" from="DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp67" to="DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp67" to="station1@lianup/LianUp" from="DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp71" to="DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp71" to="station1@lianup/LianUp" from="DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp75" to="DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp75" to="station1@lianup/LianUp" from="DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp79" to="DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp79" to="station1@lianup/LianUp" from="DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp83" to="DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp84" to="DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp83" to="station1@lianup/LianUp" from="DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp84" to="station1@lianup/LianUp" from="DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp85" to="DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp86" to="DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp85" to="station1@lianup/LianUp" from="DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp86" to="station1@lianup/LianUp" from="DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp99" to="DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp99" to="station1@lianup/LianUp" from="DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp103" to="PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp103" to="station1@lianup/LianUp" from="PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp107" to="DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp107" to="station1@lianup/LianUp" from="DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp111" to="DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp111" to="station1@lianup/LianUp" from="DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp115" to="DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp115" to="station1@lianup/LianUp" from="DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp119" to="DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp119" to="station1@lianup/LianUp" from="DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp123" to="DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp123" to="station1@lianup/LianUp" from="DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp127" to="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp127" to="station1@lianup/LianUp" from="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp131" to="DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp131" to="station1@lianup/LianUp" from="DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp135" to="DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp135" to="station1@lianup/LianUp" from="DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp139" to="DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp139" to="station1@lianup/LianUp" from="DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 RECEIVED <iq id="qxmpp143" to="DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:21:19 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:21:19 2020 SENT <iq id="qxmpp143" to="station1@lianup/LianUp" from="DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:20 2020 RECEIVED <iq id="qxmpp147" type="set"><query xmlns="urn:xmpp:luuser"><item bjid="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" passcode="{543ea898-1cb8-42a8-94ab-06c7670ec2b5}"/></query></iq>
+Sat May 23 22:21:20 2020 SENT <iq id="qxmpp147" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:luuser"><item id="4226" bjid="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" passcode="{543ea898-1cb8-42a8-94ab-06c7670ec2b5}"/></query></iq>
+Sat May 23 22:21:20 2020 RECEIVED <iq id="qxmpp149" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" kind="DELIVERY" last_visit="Sat May 23 22:21:20 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:21:20 2020 SENT <iq id="qxmpp149" to="station1@lianup" type="result"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" id="{4667b613-0484-4bb4-8f73-90f16b45f52d}" kind="DELIVERY" last_visit="Sat May 23 22:21:20 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:21:20 2020 RECEIVED <iq id="qxmpp151" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item lhs="{73935f70-01a1-456e-92e3-f3b04fe738fc}" rhs="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:21:20"/></query></iq>
+Sat May 23 22:21:20 2020 SENT <iq id="qxmpp151" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item id="{f99f666a-31a5-4bf5-8ad6-0502a1e265df}" lhs="{73935f70-01a1-456e-92e3-f3b04fe738fc}" rhs="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:21:20"/></query></iq>
+Sat May 23 22:21:20 2020 RECEIVED <iq id="qxmpp153" to="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:20 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}'":0
+Sat May 23 22:21:20 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}'":0
+Sat May 23 22:21:20 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}'":0
+Sat May 23 22:21:20 2020 SENT <iq id="qxmpp153" to="station1@lianup/LianUp" from="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:21:22 2020 RECEIVED <iq id="qxmpp157" from="station1@lianup" type="set"><query xmlns="urn:xmpp:luorderstatus" store="crab_du_jour@lianup"><item jid="juny@lianup" station="station1@lianup" name="Checkin" value="2020-05-24T02:21:20.304Z" order_id="{73935f70-01a1-456e-92e3-f3b04fe738fc}" store="crab_du_jour@lianup" time_stamp="2020-05-23 22:21:22"/></query></iq><iq id="qxmpp158" from="station1@lianup" type="set"><query store="crab_du_jour@lianup" version_control="0" version="" xmlns="urn:xmpp:lumenurows"><item id="{73935f70-01a1-456e-92e3-f3b04fe738fc}" is_versioned="0" kind="ORDER_DETAILS_INFO" rows="[]" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:21:22 2020 SENT <iq id="qxmpp157" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:luorderstatus" store="crab_du_jour@lianup"><item id="{2b2697ad-967a-4c00-82af-10e0edc3bb8a}" jid="juny@lianup" station="station1@lianup" name="Checkin" value="2020-05-24T02:21:20.304Z" order_id="{73935f70-01a1-456e-92e3-f3b04fe738fc}" store="crab_du_jour@lianup" time_stamp="2020-05-23 22:21:22"/></query></iq>
+Sat May 23 22:21:22 2020 SENT <iq id="qxmpp158" to="station1@lianup" type="result"><query store="crab_du_jour@lianup" version_control="0" version="{}" xmlns="urn:xmpp:lumenurows"><item id="{73935f70-01a1-456e-92e3-f3b04fe738fc}" is_versioned="0" kind="ORDER_DETAILS_INFO" rows="[]" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:22:13 2020 RECEIVED <iq id="qxmpp161" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:22:13 2020 SENT <iq id="qxmpp161" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:23:13 2020 RECEIVED <iq id="qxmpp163" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:23:13 2020 SENT <iq id="qxmpp163" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:23:14 2020 RECEIVED <iq id="qxmpp165" from="station1@lianup" type="set"><query store="crab_du_jour@lianup" version_control="0" version="" xmlns="urn:xmpp:lumenurows"><item id="{73935f70-01a1-456e-92e3-f3b04fe738fc}" is_versioned="0" kind="ORDER_LOCK" rows="{&quot;station&quot;:&quot;&quot;,&quot;bjid&quot;:&quot;&quot;}" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:23:14 2020 SENT <iq id="qxmpp165" to="station1@lianup" type="result"><query store="crab_du_jour@lianup" version_control="0" version="{}" xmlns="urn:xmpp:lumenurows"><item id="{73935f70-01a1-456e-92e3-f3b04fe738fc}" is_versioned="0" kind="ORDER_LOCK" rows="{&quot;station&quot;:&quot;&quot;,&quot;bjid&quot;:&quot;&quot;}" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:24:13 2020 RECEIVED <iq id="qxmpp168" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:24:13 2020 SENT <iq id="qxmpp168" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:25:13 2020 RECEIVED <iq id="qxmpp170" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:25:13 2020 SENT <iq id="qxmpp170" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:26:13 2020 RECEIVED <iq id="qxmpp172" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:26:13 2020 SENT <iq id="qxmpp172" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:27:13 2020 RECEIVED <iq id="qxmpp174" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:27:13 2020 SENT <iq id="qxmpp174" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:28:13 2020 RECEIVED <iq id="qxmpp176" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:28:13 2020 SENT <iq id="qxmpp176" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:28:45 2020 RECEIVED <iq id="qxmpp178" type="set"><query xmlns="urn:xmpp:luuser"><item bjid="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" passcode="{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}"/></query></iq>
+Sat May 23 22:28:45 2020 SENT <iq id="qxmpp178" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:luuser"><item id="4227" bjid="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" passcode="{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}"/></query></iq>
+Sat May 23 22:28:45 2020 RECEIVED <iq id="qxmpp180" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" kind="DELIVERY" last_visit="Sat May 23 22:28:45 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:28:45 2020 SENT <iq id="qxmpp180" to="station1@lianup" type="result"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" id="{d1376bf4-7ad3-45e8-8b21-e6a70466ecb2}" kind="DELIVERY" last_visit="Sat May 23 22:28:45 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:28:45 2020 RECEIVED <iq id="qxmpp182" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item lhs="{1e3e1cda-f436-40b0-bdf7-5d3a62346386}" rhs="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:28:45"/></query></iq>
+Sat May 23 22:28:45 2020 SENT <iq id="qxmpp182" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item id="{32278455-3231-4f8b-8498-dd7baf75d9a3}" lhs="{1e3e1cda-f436-40b0-bdf7-5d3a62346386}" rhs="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:28:45"/></query></iq>
+Sat May 23 22:28:45 2020 RECEIVED <iq id="qxmpp184" to="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:28:45 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}'":0
+Sat May 23 22:28:45 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}'":0
+Sat May 23 22:28:45 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}'":0
+Sat May 23 22:28:45 2020 SENT <iq id="qxmpp184" to="station1@lianup/LianUp" from="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:28:47 2020 RECEIVED <iq id="qxmpp188" from="station1@lianup" type="set"><query xmlns="urn:xmpp:luorderstatus" store="crab_du_jour@lianup"><item jid="juny@lianup" station="station1@lianup" name="Checkin" value="2020-05-24T02:28:45.211Z" order_id="{1e3e1cda-f436-40b0-bdf7-5d3a62346386}" store="crab_du_jour@lianup" time_stamp="2020-05-23 22:28:47"/></query></iq><iq id="qxmpp189" from="station1@lianup" type="set"><query store="crab_du_jour@lianup" version_control="0" version="" xmlns="urn:xmpp:lumenurows"><item id="{1e3e1cda-f436-40b0-bdf7-5d3a62346386}" is_versioned="0" kind="ORDER_DETAILS_INFO" rows="[]" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:28:47 2020 SENT <iq id="qxmpp188" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:luorderstatus" store="crab_du_jour@lianup"><item id="{ac6725b5-5d97-4c95-9b2c-6d1384fe5767}" jid="juny@lianup" station="station1@lianup" name="Checkin" value="2020-05-24T02:28:45.211Z" order_id="{1e3e1cda-f436-40b0-bdf7-5d3a62346386}" store="crab_du_jour@lianup" time_stamp="2020-05-23 22:28:47"/></query></iq>
+Sat May 23 22:28:47 2020 SENT <iq id="qxmpp189" to="station1@lianup" type="result"><query store="crab_du_jour@lianup" version_control="0" version="{}" xmlns="urn:xmpp:lumenurows"><item id="{1e3e1cda-f436-40b0-bdf7-5d3a62346386}" is_versioned="0" kind="ORDER_DETAILS_INFO" rows="[]" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:29:13 2020 RECEIVED <iq id="qxmpp192" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:29:13 2020 SENT <iq id="qxmpp192" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:30:13 2020 RECEIVED <iq id="qxmpp194" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:30:13 2020 SENT <iq id="qxmpp194" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:31:13 2020 RECEIVED <iq id="qxmpp196" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:31:13 2020 SENT <iq id="qxmpp196" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:32:13 2020 RECEIVED <iq id="qxmpp198" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:32:13 2020 SENT <iq id="qxmpp198" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:33:01 2020 DEBUG Debug: settle work is working ...:0
+Sat May 23 22:33:13 2020 RECEIVED <iq id="qxmpp200" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:33:13 2020 SENT <iq id="qxmpp200" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:34:13 2020 RECEIVED <iq id="qxmpp202" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:34:13 2020 SENT <iq id="qxmpp202" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:35:13 2020 RECEIVED <iq id="qxmpp204" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:35:13 2020 SENT <iq id="qxmpp204" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:36:13 2020 RECEIVED <iq id="qxmpp206" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:36:13 2020 SENT <iq id="qxmpp206" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:37:13 2020 RECEIVED <iq id="qxmpp208" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:37:13 2020 SENT <iq id="qxmpp208" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:38:13 2020 RECEIVED <iq id="qxmpp210" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:38:13 2020 SENT <iq id="qxmpp210" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:39:13 2020 RECEIVED <iq id="qxmpp212" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:39:13 2020 SENT <iq id="qxmpp212" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:40:13 2020 RECEIVED <iq id="qxmpp214" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:40:13 2020 SENT <iq id="qxmpp214" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:41:13 2020 RECEIVED <iq id="qxmpp216" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:41:13 2020 SENT <iq id="qxmpp216" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:41:20 2020 WARNING Socket error: The remote host closed the connection
+Sat May 23 22:41:20 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 52951
+Sat May 23 22:41:57 2020 INFO Incoming client connection from ::1 53668
+Sat May 23 22:41:57 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 23 22:41:57 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="io9FKs82eFf3gL6Wv8SE0QMMw6u3n9OK" from="lianup" version="1.0" xml:lang="en">
+Sat May 23 22:41:57 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Sat May 23 22:41:57 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Sat May 23 22:41:57 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9IkwvTnNqWXJPd2U4Vnd5SG5UWEFUUXpJQzg4bDkwc1RWUm5aOXJyemVneWM9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Sat May 23 22:41:57 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9IlhmWEN3VWtYaXVsUEx2dm5Ia2xuV3FxVXY2bkFSWEEzS2pPMEkwWStsVGs9IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9IkwvTnNqWXJPd2U4Vnd5SG5UWEFUUXpJQzg4bDkwc1RWUm5aOXJyemVneWM9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9MWFjZDcxYzg2MDMwZTliYThjOGQ2ZDU1YTcwNjIzMmUsdXNlcm5hbWU9c3RhdGlvbjE=</response>
+Sat May 23 22:41:57 2020 DEBUG Debug: received password request :  "station1@lianup"   "":0
+Sat May 23 22:41:57 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='station1@lianup'":0
+Sat May 23 22:41:57 2020 DEBUG Debug: is valid true:0
+Sat May 23 22:41:57 2020 DEBUG Debug: passcode is :  "1234":0
+Sat May 23 22:41:57 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD01ZDY4YzQ0OTI0YjliNTdjMTY2Y2IzODgxY2Q1MzFhZQ==</challenge>
+Sat May 23 22:41:57 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 23 22:41:57 2020 INFO Authentication succeeded for 'station1@lianup' from ::1 53668
+Sat May 23 22:41:57 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 23 22:41:57 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 23 22:41:57 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="R9GHPFBEVrsGFIlg6p1eL8d5w3H6v5yd" from="lianup" version="1.0" xml:lang="en">
+Sat May 23 22:41:57 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Sat May 23 22:41:57 2020 RECEIVED <iq id="qxmpp3" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Sat May 23 22:41:57 2020 SENT <iq id="qxmpp3" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>station1@lianup/LianUp</jid></bind></iq>
+Sat May 23 22:41:57 2020 RECEIVED <iq id="qxmpp5" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Sat May 23 22:41:57 2020 SENT <iq id="qxmpp5" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:41:57 2020 RECEIVED <iq id="qxmpp7" to="station1@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp8" type="get"><time xmlns="urn:xmpp:time"/></iq><iq id="qxmpp9" from="station1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Sat May 23 22:41:57 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:41:57 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:41:57 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:41:57 2020 SENT <iq id="qxmpp7" to="station1@lianup/LianUp" from="station1@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>station1</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:41:57 2020 SENT <iq id="qxmpp8" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-05-24T02:41:57.372Z</utc></time></iq>
+Sat May 23 22:41:57 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 23 22:41:57 2020 SENT <iq id="qxmpp9" to="station1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Sat May 23 22:41:57 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 23 22:41:57 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Sat May 23 22:41:58 2020 RECEIVED <iq id="qxmpp16" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:41:58 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:41:58 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:41:58 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:41:58 2020 SENT <iq id="qxmpp16" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:41:59 2020 RECEIVED <iq id="qxmpp22" to="juny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp23" to="leowang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp24" to="liang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp25" to="lindenglan@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:41:59 2020 SENT <iq id="qxmpp22" to="station1@lianup/LianUp" from="juny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>junny</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:41:59 2020 SENT <iq id="qxmpp23" to="station1@lianup/LianUp" from="leowang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>leo</GIVEN><FAMILY>wang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:41:59 2020 SENT <iq id="qxmpp24" to="station1@lianup/LianUp" from="liang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>liang</GIVEN><FAMILY>jiang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:41:59 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:41:59 2020 SENT <iq id="qxmpp25" to="station1@lianup/LianUp" from="lindenglan@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>lindeng</GIVEN><FAMILY>lan</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:01 2020 RECEIVED <iq id="qxmpp38" type="get"><query xmlns="urn:xmpp:lutasklogsearch" sql="SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup'" start="2020-05-23 05:00:00" end="2020-05-24 05:00:00"/></iq>
+Sat May 23 22:42:01 2020 DEBUG Debug: "SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup' AND start BETWEEN STR_TO_DATE('2020-05-23 05:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-24 05:00:00', '%Y-%m-%d %H:%i:%s')":0
+Sat May 23 22:42:01 2020 SENT <iq id="qxmpp38" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:lutasklogsearch" sql="" start="" end=""/></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp40" to="DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp40" to="station1@lianup/LianUp" from="DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp44" to="DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp44" to="station1@lianup/LianUp" from="DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp48" to="DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp48" to="station1@lianup/LianUp" from="DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp52" to="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp52" to="station1@lianup/LianUp" from="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp56" to="DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp56" to="station1@lianup/LianUp" from="DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp60" to="DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp60" to="station1@lianup/LianUp" from="DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp64" to="DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp64" to="station1@lianup/LianUp" from="DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp68" to="DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp68" to="station1@lianup/LianUp" from="DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp72" to="DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp72" to="station1@lianup/LianUp" from="DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp76" to="DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp76" to="station1@lianup/LianUp" from="DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp80" to="DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp80" to="station1@lianup/LianUp" from="DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp84" to="DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp84" to="station1@lianup/LianUp" from="DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 RECEIVED <iq id="qxmpp85" to="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp86" to="DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp85" to="station1@lianup/LianUp" from="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:42:02 2020 SENT <iq id="qxmpp86" to="station1@lianup/LianUp" from="DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp96" to="DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp96" to="station1@lianup/LianUp" from="DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp100" to="DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp100" to="station1@lianup/LianUp" from="DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp101" to="DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp101" to="station1@lianup/LianUp" from="DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp108" to="PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp108" to="station1@lianup/LianUp" from="PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp112" to="DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp112" to="station1@lianup/LianUp" from="DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp116" to="DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp116" to="station1@lianup/LianUp" from="DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp120" to="DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp120" to="station1@lianup/LianUp" from="DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp124" to="DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp124" to="station1@lianup/LianUp" from="DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp128" to="DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp128" to="station1@lianup/LianUp" from="DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp132" to="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp132" to="station1@lianup/LianUp" from="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp136" to="DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp136" to="station1@lianup/LianUp" from="DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp140" to="DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp140" to="station1@lianup/LianUp" from="DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp144" to="DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp144" to="station1@lianup/LianUp" from="DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 RECEIVED <iq id="qxmpp145" to="DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:42:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:42:03 2020 SENT <iq id="qxmpp145" to="station1@lianup/LianUp" from="DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:04 2020 RECEIVED <iq id="qxmpp152" type="set"><query xmlns="urn:xmpp:luuser"><item bjid="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" passcode="{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}"/></query></iq>
+Sat May 23 22:42:04 2020 SENT <iq id="qxmpp152" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:luuser"><item id="4228" bjid="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" passcode="{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}"/></query></iq>
+Sat May 23 22:42:04 2020 RECEIVED <iq id="qxmpp154" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" kind="DELIVERY" last_visit="Sat May 23 22:42:04 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:42:04 2020 SENT <iq id="qxmpp154" to="station1@lianup" type="result"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" id="{8d945cbc-35c5-483c-ad3c-3c8ed7b1f433}" kind="DELIVERY" last_visit="Sat May 23 22:42:04 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:42:04 2020 RECEIVED <iq id="qxmpp156" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item lhs="{6280f9fc-b54e-48d7-909e-765ecee6c224}" rhs="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:42:04"/></query></iq>
+Sat May 23 22:42:04 2020 SENT <iq id="qxmpp156" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item id="{6939bd09-962b-411d-b364-64c5e61c24b5}" lhs="{6280f9fc-b54e-48d7-909e-765ecee6c224}" rhs="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:42:04"/></query></iq>
+Sat May 23 22:42:04 2020 RECEIVED <iq id="qxmpp158" to="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:04 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}'":0
+Sat May 23 22:42:04 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}'":0
+Sat May 23 22:42:04 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}'":0
+Sat May 23 22:42:04 2020 SENT <iq id="qxmpp158" to="station1@lianup/LianUp" from="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:42:05 2020 RECEIVED <iq id="qxmpp162" from="station1@lianup" type="set"><query xmlns="urn:xmpp:luorderstatus" store="crab_du_jour@lianup"><item jid="juny@lianup" station="station1@lianup" name="Checkin" value="2020-05-24T02:42:04.296Z" order_id="{6280f9fc-b54e-48d7-909e-765ecee6c224}" store="crab_du_jour@lianup" time_stamp="2020-05-23 22:42:05"/></query></iq><iq id="qxmpp163" from="station1@lianup" type="set"><query store="crab_du_jour@lianup" version_control="0" version="" xmlns="urn:xmpp:lumenurows"><item id="{6280f9fc-b54e-48d7-909e-765ecee6c224}" is_versioned="0" kind="ORDER_DETAILS_INFO" rows="[]" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:42:05 2020 SENT <iq id="qxmpp162" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:luorderstatus" store="crab_du_jour@lianup"><item id="{4e84854f-e02a-44ca-8ee6-66857bebad71}" jid="juny@lianup" station="station1@lianup" name="Checkin" value="2020-05-24T02:42:04.296Z" order_id="{6280f9fc-b54e-48d7-909e-765ecee6c224}" store="crab_du_jour@lianup" time_stamp="2020-05-23 22:42:05"/></query></iq>
+Sat May 23 22:42:05 2020 SENT <iq id="qxmpp163" to="station1@lianup" type="result"><query store="crab_du_jour@lianup" version_control="0" version="{}" xmlns="urn:xmpp:lumenurows"><item id="{6280f9fc-b54e-48d7-909e-765ecee6c224}" is_versioned="0" kind="ORDER_DETAILS_INFO" rows="[]" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:42:57 2020 RECEIVED <iq id="qxmpp166" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:42:57 2020 SENT <iq id="qxmpp166" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:43:52 2020 WARNING Socket error: The remote host closed the connection
+Sat May 23 22:43:52 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 53668
+Sat May 23 22:44:50 2020 INFO Incoming client connection from ::1 53787
+Sat May 23 22:44:50 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 23 22:44:50 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="sPArWqUMjlDxclZYpXreC6leoJGNnZuA" from="lianup" version="1.0" xml:lang="en">
+Sat May 23 22:44:50 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Sat May 23 22:44:50 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Sat May 23 22:44:50 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9IlJYUXA0ZEpzemlqdm9HVmliUkN5ZjlIN3Yxd2xOa2txK1hZaHJPVzdPTGc9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Sat May 23 22:44:50 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9IkRSeFBJa2JyclU5VTlTR3F1WVhtMXptd0hjTmRjWjhoRkZrRXBEUElNVEE9IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9IlJYUXA0ZEpzemlqdm9HVmliUkN5ZjlIN3Yxd2xOa2txK1hZaHJPVzdPTGc9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9ZTNkNzY1ZDEzOTE0NTM2NjRkOGMxZDM2ZjNlOTAyYWUsdXNlcm5hbWU9c3RhdGlvbjE=</response>
+Sat May 23 22:44:50 2020 DEBUG Debug: received password request :  "station1@lianup"   "":0
+Sat May 23 22:44:50 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='station1@lianup'":0
+Sat May 23 22:44:50 2020 DEBUG Debug: is valid true:0
+Sat May 23 22:44:50 2020 DEBUG Debug: passcode is :  "1234":0
+Sat May 23 22:44:50 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD00NjU4NTFmZDZhMGRhMDZmOTg2MWZmMjk0MjljMjI5Mg==</challenge>
+Sat May 23 22:44:50 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 23 22:44:50 2020 INFO Authentication succeeded for 'station1@lianup' from ::1 53787
+Sat May 23 22:44:50 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 23 22:44:50 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 23 22:44:50 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="USR55jUDYWUtFfYSGMyUGOvfGn0m6Cjo" from="lianup" version="1.0" xml:lang="en">
+Sat May 23 22:44:50 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Sat May 23 22:44:51 2020 RECEIVED <iq id="qxmpp3" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Sat May 23 22:44:51 2020 SENT <iq id="qxmpp3" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>station1@lianup/LianUp</jid></bind></iq>
+Sat May 23 22:44:51 2020 RECEIVED <iq id="qxmpp5" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Sat May 23 22:44:51 2020 SENT <iq id="qxmpp5" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:44:51 2020 RECEIVED <iq id="qxmpp7" to="station1@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp8" type="get"><time xmlns="urn:xmpp:time"/></iq><iq id="qxmpp9" from="station1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Sat May 23 22:44:51 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:44:51 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:44:51 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='station1@lianup'":0
+Sat May 23 22:44:51 2020 SENT <iq id="qxmpp7" to="station1@lianup/LianUp" from="station1@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>station1</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:51 2020 SENT <iq id="qxmpp8" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-05-24T02:44:51.041Z</utc></time></iq>
+Sat May 23 22:44:51 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 23 22:44:51 2020 SENT <iq id="qxmpp9" to="station1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Sat May 23 22:44:51 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 23 22:44:51 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Sat May 23 22:44:52 2020 RECEIVED <iq id="qxmpp16" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:52 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:44:52 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:44:52 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 23 22:44:52 2020 SENT <iq id="qxmpp16" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:53 2020 RECEIVED <iq id="qxmpp22" to="juny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp23" to="leowang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp24" to="liang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp25" to="lindenglan@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juny@lianup'":0
+Sat May 23 22:44:53 2020 SENT <iq id="qxmpp22" to="station1@lianup/LianUp" from="juny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>junny</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='leowang@lianup'":0
+Sat May 23 22:44:53 2020 SENT <iq id="qxmpp23" to="station1@lianup/LianUp" from="leowang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>leo</GIVEN><FAMILY>wang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='liang@lianup'":0
+Sat May 23 22:44:53 2020 SENT <iq id="qxmpp24" to="station1@lianup/LianUp" from="liang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>liang</GIVEN><FAMILY>jiang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:44:53 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='lindenglan@lianup'":0
+Sat May 23 22:44:53 2020 SENT <iq id="qxmpp25" to="station1@lianup/LianUp" from="lindenglan@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>lindeng</GIVEN><FAMILY>lan</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:55 2020 RECEIVED <iq id="qxmpp38" type="get"><query xmlns="urn:xmpp:lutasklogsearch" sql="SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup'" start="2020-05-23 05:00:00" end="2020-05-24 05:00:00"/></iq>
+Sat May 23 22:44:55 2020 DEBUG Debug: "SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup' AND start BETWEEN STR_TO_DATE('2020-05-23 05:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-24 05:00:00', '%Y-%m-%d %H:%i:%s')":0
+Sat May 23 22:44:55 2020 SENT <iq id="qxmpp38" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:lutasklogsearch" sql="" start="" end=""/></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp40" to="DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp40" to="station1@lianup/LianUp" from="DINEIN_TOGO__{77e26c9a-6f7e-4a7c-8860-79c05c98ea24}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp44" to="DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp44" to="station1@lianup/LianUp" from="DINEIN_TOGO__{831683c9-d3e4-47de-8166-4f7ceb947321}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp48" to="DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp48" to="station1@lianup/LianUp" from="DINEIN_TOGO__{8681e03f-1dfe-479c-a7dd-4ade230ced41}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp52" to="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp52" to="station1@lianup/LianUp" from="DINEIN_TOGO__{130235b8-bae6-4a4c-ad55-c2c6d2cc0e78}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp56" to="DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp56" to="station1@lianup/LianUp" from="DINEIN_TOGO__{43ace22f-3410-4095-883d-362d96339e46}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp60" to="DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp60" to="station1@lianup/LianUp" from="DINEIN_TOGO__{a507be58-7c76-404a-8314-21fe6b143890}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp64" to="DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp64" to="station1@lianup/LianUp" from="DINEIN_TOGO__{dfbf4a8e-18be-4190-afbe-4414c05a29db}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp68" to="DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp68" to="station1@lianup/LianUp" from="DINEIN_TOGO__{175458ac-b25f-4e7a-be73-d39a19a67989}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp72" to="DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp72" to="station1@lianup/LianUp" from="DINEIN_TOGO__{77cd27e4-d622-4245-b975-94879f3ab5c4}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp76" to="DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp76" to="station1@lianup/LianUp" from="DINEIN_TOGO__{a67b6df7-899a-4fea-bc9c-acbd9a52e2d2}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp80" to="DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp80" to="station1@lianup/LianUp" from="DINEIN_TOGO__{e60d836a-2965-491e-ba86-87a90d97a71d}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp84" to="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp85" to="DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp84" to="station1@lianup/LianUp" from="DINEIN_TOGO__{0b2a5692-4e3e-41d7-9a90-ddff4ce34810}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp85" to="station1@lianup/LianUp" from="DINEIN_TOGO__{c069ca9a-4982-4c2d-8033-7ed7c126e6ff}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp92" to="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp92" to="station1@lianup/LianUp" from="DINEIN_TOGO__{543ea898-1cb8-42a8-94ab-06c7670ec2b5}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp96" to="DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp96" to="station1@lianup/LianUp" from="DINEIN_TOGO__{cfb3df44-378d-4fba-977d-08e85772aaaf}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp100" to="DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp100" to="station1@lianup/LianUp" from="DINEIN_TOGO__{8fad75ca-f04d-4519-808f-94d24af78592}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp104" to="DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp104" to="station1@lianup/LianUp" from="DINEIN_TOGO__{b9c1167a-9e32-4e3e-aff3-1dc5722bec08}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp108" to="DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp108" to="station1@lianup/LianUp" from="DINEIN_TOGO__{32b96a8b-878c-46aa-9747-d40630bde231}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp112" to="PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp112" to="station1@lianup/LianUp" from="PICKUP__{842a4970-cc8b-48db-a533-2e0591e0081d}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp116" to="DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp116" to="station1@lianup/LianUp" from="DINEIN_TOGO__{99948c26-df3a-4257-8d89-e8fb77993162}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp120" to="DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp120" to="station1@lianup/LianUp" from="DINEIN_TOGO__{ca612081-a93b-4da1-880a-8146031131a4}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp124" to="DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp124" to="station1@lianup/LianUp" from="DINEIN_TOGO__{206c626a-f743-4279-b468-a02036862b93}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp128" to="DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp128" to="station1@lianup/LianUp" from="DINEIN_TOGO__{4c645d5b-8e7c-493c-8f85-b8c8f0a87d71}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp132" to="DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp132" to="station1@lianup/LianUp" from="DINEIN_TOGO__{f77ed68c-0b9a-4ce6-bb10-1db448c37a48}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp136" to="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp136" to="station1@lianup/LianUp" from="DINEIN_TOGO__{2a271251-f452-4c00-bc49-eec7be9abf14}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp140" to="DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp140" to="station1@lianup/LianUp" from="DINEIN_TOGO__{83ee5fd7-ed07-4a2d-96be-21f3ec67146a}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 RECEIVED <iq id="qxmpp144" to="DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:44:56 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}'":0
+Sat May 23 22:44:56 2020 SENT <iq id="qxmpp144" to="station1@lianup/LianUp" from="DINEIN_TOGO__{219c5d23-6d5e-4b44-86e0-1791fd65b3ae}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:57 2020 RECEIVED <iq id="qxmpp148" to="DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:57 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:44:57 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:44:57 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}'":0
+Sat May 23 22:44:57 2020 SENT <iq id="qxmpp148" to="station1@lianup/LianUp" from="DINEIN_TOGO__{91a5f003-9766-499d-bed1-b2e48784c6f9}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:57 2020 RECEIVED <iq id="qxmpp149" to="DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:57 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:44:57 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:44:57 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}'":0
+Sat May 23 22:44:57 2020 SENT <iq id="qxmpp149" to="station1@lianup/LianUp" from="DINEIN_TOGO__{13a60a3d-94a3-4513-bc41-74cf7f6e7ac2}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:57 2020 RECEIVED <iq id="qxmpp156" type="set"><query xmlns="urn:xmpp:luuser"><item bjid="DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}" passcode="{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}"/></query></iq>
+Sat May 23 22:44:57 2020 SENT <iq id="qxmpp156" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:luuser"><item id="4229" bjid="DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}" passcode="{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}"/></query></iq>
+Sat May 23 22:44:57 2020 RECEIVED <iq id="qxmpp158" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}" kind="DELIVERY" last_visit="Sat May 23 22:44:57 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:44:57 2020 SENT <iq id="qxmpp158" to="station1@lianup" type="result"><query xmlns="urn:xmpp:lucustomer"><item bjid="DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}" id="{c55bde0e-05b8-4a23-b5df-8bd219dc10ab}" kind="DELIVERY" last_visit="Sat May 23 22:44:57 2020 GMT-0400" number_of_purchase="0" number_of_visit="0" point="0" status="ACTIVE" store="crab_du_jour@lianup" total_number_of_purchase="0" total_number_of_visit="0" total_point="0"/></query></iq>
+Sat May 23 22:44:58 2020 RECEIVED <iq id="qxmpp160" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item lhs="{42204760-2355-4f27-b3ba-45c288fedd64}" rhs="DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:44:57"/></query></iq>
+Sat May 23 22:44:58 2020 SENT <iq id="qxmpp160" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:lurelation" store="crab_du_jour@lianup" version="" is_versioned="0"><item id="{0ab9faae-b2aa-42bd-8413-654aad9111f7}" lhs="{42204760-2355-4f27-b3ba-45c288fedd64}" rhs="DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}" status="1" is_versioned="0" store="crab_du_jour@lianup" kind="OPEN_ORDER_2_CUSTOMER" created_on="2020-05-23 22:44:57"/></query></iq>
+Sat May 23 22:44:58 2020 RECEIVED <iq id="qxmpp162" to="DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:58 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}'":0
+Sat May 23 22:44:58 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}'":0
+Sat May 23 22:44:58 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}'":0
+Sat May 23 22:44:58 2020 SENT <iq id="qxmpp162" to="station1@lianup/LianUp" from="DINEIN_TOGO__{bc9042cb-066e-4a8f-8656-bb6c0b04f59e}" type="result"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 23 22:44:59 2020 RECEIVED <iq id="qxmpp166" from="station1@lianup" type="set"><query xmlns="urn:xmpp:luorderstatus" store="crab_du_jour@lianup"><item jid="juny@lianup" station="station1@lianup" name="Checkin" value="2020-05-24T02:44:57.839Z" order_id="{42204760-2355-4f27-b3ba-45c288fedd64}" store="crab_du_jour@lianup" time_stamp="2020-05-23 22:44:59"/></query></iq><iq id="qxmpp167" from="station1@lianup" type="set"><query store="crab_du_jour@lianup" version_control="0" version="" xmlns="urn:xmpp:lumenurows"><item id="{42204760-2355-4f27-b3ba-45c288fedd64}" is_versioned="0" kind="ORDER_DETAILS_INFO" rows="[]" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:44:59 2020 SENT <iq id="qxmpp166" to="station1@lianup" from="station1@lianup" type="result"><query xmlns="urn:xmpp:luorderstatus" store="crab_du_jour@lianup"><item id="{4b17d059-4a5a-44d0-bece-9990a6300519}" jid="juny@lianup" station="station1@lianup" name="Checkin" value="2020-05-24T02:44:57.839Z" order_id="{42204760-2355-4f27-b3ba-45c288fedd64}" store="crab_du_jour@lianup" time_stamp="2020-05-23 22:44:59"/></query></iq>
+Sat May 23 22:44:59 2020 SENT <iq id="qxmpp167" to="station1@lianup" type="result"><query store="crab_du_jour@lianup" version_control="0" version="{}" xmlns="urn:xmpp:lumenurows"><item id="{42204760-2355-4f27-b3ba-45c288fedd64}" is_versioned="0" kind="ORDER_DETAILS_INFO" rows="[]" status="ACTIVE" store="crab_du_jour@lianup"/></query></iq>
+Sat May 23 22:45:50 2020 RECEIVED <iq id="qxmpp170" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:45:50 2020 SENT <iq id="qxmpp170" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:46:50 2020 RECEIVED <iq id="qxmpp172" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:46:50 2020 SENT <iq id="qxmpp172" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:47:50 2020 RECEIVED <iq id="qxmpp174" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:47:50 2020 SENT <iq id="qxmpp174" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:48:01 2020 DEBUG Debug: settle work is working ...:0
+Sat May 23 22:48:50 2020 RECEIVED <iq id="qxmpp176" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:48:50 2020 SENT <iq id="qxmpp176" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:49:51 2020 RECEIVED <iq id="qxmpp178" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:49:51 2020 SENT <iq id="qxmpp178" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:50:51 2020 RECEIVED <iq id="qxmpp180" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 23 22:50:51 2020 SENT <iq id="qxmpp180" to="station1@lianup/LianUp" type="result"/>
+Sat May 23 22:51:09 2020 WARNING Socket error: The remote host closed the connection
+Sat May 23 22:51:09 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 53787
+Sat May 23 23:03:01 2020 DEBUG Debug: settle work is working ...:0
+Sat May 23 23:15:36 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_05_23_23_15_36_896.txt":0

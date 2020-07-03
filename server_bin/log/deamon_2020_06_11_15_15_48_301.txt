@@ -1,0 +1,17 @@
+Thu Jun 11 15:16:48 2020 RECEIVED <iq id="qxmpp138" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 11 15:16:48 2020 SENT <iq id="qxmpp138" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 11 15:17:48 2020 RECEIVED <iq id="qxmpp140" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 11 15:17:48 2020 SENT <iq id="qxmpp140" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 11 15:18:48 2020 RECEIVED <iq id="qxmpp142" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 11 15:18:48 2020 SENT <iq id="qxmpp142" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 11 15:19:48 2020 RECEIVED <iq id="qxmpp144" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 11 15:19:48 2020 SENT <iq id="qxmpp144" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 11 15:20:48 2020 RECEIVED <iq id="qxmpp146" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 11 15:20:48 2020 SENT <iq id="qxmpp146" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 11 15:21:31 2020 WARNING Socket error: The remote host closed the connection
+Thu Jun 11 15:21:31 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 57983
+Thu Jun 11 15:29:52 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 11 15:44:52 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 11 15:59:52 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 11 16:14:52 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 11 16:15:48 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_06_11_16_15_48_301.txt":0

@@ -1,0 +1,72 @@
+Thu Jun 25 18:07:51 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 25 18:22:52 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 25 18:33:12 2020 INFO Incoming client connection from ::ffff:192.168.1.159 62655
+Thu Jun 25 18:33:12 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 25 18:33:12 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="3mBR3vO1PwryFzT8ntU19jkpEauQokZs" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 25 18:33:12 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Thu Jun 25 18:33:12 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Thu Jun 25 18:33:12 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9ImkvcnlPdlEvYU81cFVJOWVtNUFxN1Y0ZWJka0pQRnBGQzVoNWFmNDJ2czA9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Thu Jun 25 18:33:12 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9InVkV0lBUUVxOGxEazFraUZndHM0Tm1idkVNb2ZVUGRQNGJVMWszTVBoa289IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9ImkvcnlPdlEvYU81cFVJOWVtNUFxN1Y0ZWJka0pQRnBGQzVoNWFmNDJ2czA9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9NGIxNzIzYTk4YTk3YTIwMmMxYTI4MTE2OGQxODQzMDUsdXNlcm5hbWU9aXBhZDE=</response>
+Thu Jun 25 18:33:12 2020 DEBUG Debug: received password request :  "ipad1@lianup"   "":0
+Thu Jun 25 18:33:12 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='ipad1@lianup'":0
+Thu Jun 25 18:33:12 2020 DEBUG Debug: is valid true:0
+Thu Jun 25 18:33:12 2020 DEBUG Debug: passcode is :  "1234":0
+Thu Jun 25 18:33:12 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD0xOWIxMDVkNDUyMDAzNmNkNzgyYThjNDAzZDE4OTRjOA==</challenge>
+Thu Jun 25 18:33:12 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 25 18:33:12 2020 INFO Authentication succeeded for 'ipad1@lianup' from ::ffff:192.168.1.159 62655
+Thu Jun 25 18:33:12 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 25 18:33:12 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 25 18:33:12 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="t4l4v3p3GvXKZYuZvbs9I0AVVn2A8UIs" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 25 18:33:12 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Thu Jun 25 18:33:12 2020 RECEIVED <iq id="qxmpp65" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Thu Jun 25 18:33:12 2020 SENT <iq id="qxmpp65" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>ipad1@lianup/LianUp</jid></bind></iq>
+Thu Jun 25 18:33:12 2020 RECEIVED <iq id="qxmpp67" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Thu Jun 25 18:33:12 2020 SENT <iq id="qxmpp67" to="ipad1@lianup/LianUp" type="result"/>
+Thu Jun 25 18:33:18 2020 RECEIVED <iq id="qxmpp69" from="ipad1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Thu Jun 25 18:33:18 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='ipad1@lianup'":0
+Thu Jun 25 18:33:18 2020 SENT <iq id="qxmpp69" to="ipad1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Thu Jun 25 18:33:18 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='ipad1@lianup'":0
+Thu Jun 25 18:33:18 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='ipad1@lianup'":0
+Thu Jun 25 18:33:18 2020 RECEIVED <presence type="unavailable"><status>Logged out</status><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence></stream:stream>
+Thu Jun 25 18:33:18 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='ipad1@lianup'":0
+Thu Jun 25 18:33:18 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='ipad1@lianup'":0
+Thu Jun 25 18:33:18 2020 WARNING Socket error: The remote host closed the connection
+Thu Jun 25 18:33:18 2020 INFO Socket disconnected for 'ipad1@lianup/LianUp' from ::ffff:192.168.1.159 62655
+Thu Jun 25 18:33:39 2020 INFO Incoming client connection from ::ffff:192.168.1.159 62661
+Thu Jun 25 18:33:39 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 25 18:33:39 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="bj9aAjXApcuOYGJYTlDEHjFi2p7tqh6I" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 25 18:33:39 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Thu Jun 25 18:33:39 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Thu Jun 25 18:33:39 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9InpOVTJNM2x6SzRYK1dKaVl0WWFvM1BPZkxSRTRRVVNXL0FUc25vVEt1RVE9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Thu Jun 25 18:33:39 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9Ikd5azd4K3AvMVpFV1gwM095U1MwUFdsblhGTHNWZDVZc0JrdUE1S0l4Ums9IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9InpOVTJNM2x6SzRYK1dKaVl0WWFvM1BPZkxSRTRRVVNXL0FUc25vVEt1RVE9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9ZmYyYjBkZTc3NWM1ZjBkOGNkOTdlM2E1MDJhZmY4NjAsdXNlcm5hbWU9aXBhZDE=</response>
+Thu Jun 25 18:33:39 2020 DEBUG Debug: received password request :  "ipad1@lianup"   "":0
+Thu Jun 25 18:33:39 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='ipad1@lianup'":0
+Thu Jun 25 18:33:39 2020 DEBUG Debug: is valid true:0
+Thu Jun 25 18:33:39 2020 DEBUG Debug: passcode is :  "1234":0
+Thu Jun 25 18:33:39 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD0yNjAwNmY1YzZhMmUzODY1NjFhMjgwZTEzN2ViMDk0MQ==</challenge>
+Thu Jun 25 18:33:39 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 25 18:33:39 2020 INFO Authentication succeeded for 'ipad1@lianup' from ::ffff:192.168.1.159 62661
+Thu Jun 25 18:33:39 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 25 18:33:39 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 25 18:33:39 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="qv7Ql6ihgEi0cza6tOU4qMdwQknARbzm" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 25 18:33:39 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Thu Jun 25 18:33:39 2020 RECEIVED <iq id="qxmpp72" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Thu Jun 25 18:33:39 2020 SENT <iq id="qxmpp72" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>ipad1@lianup/LianUp</jid></bind></iq>
+Thu Jun 25 18:33:39 2020 RECEIVED <iq id="qxmpp74" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Thu Jun 25 18:33:39 2020 SENT <iq id="qxmpp74" to="ipad1@lianup/LianUp" type="result"/>
+Thu Jun 25 18:33:40 2020 RECEIVED <iq id="qxmpp76" from="ipad1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Thu Jun 25 18:33:40 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='ipad1@lianup'":0
+Thu Jun 25 18:33:40 2020 SENT <iq id="qxmpp76" to="ipad1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Thu Jun 25 18:33:40 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='ipad1@lianup'":0
+Thu Jun 25 18:33:40 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='ipad1@lianup'":0
+Thu Jun 25 18:33:42 2020 RECEIVED <iq id="qxmpp78" type="get"><query xmlns="urn:xmpp:lutasklogsearch" sql="SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup'" start="2020-06-25 05:00:00" end="2020-06-26 05:00:00"/></iq>
+Thu Jun 25 18:33:42 2020 DEBUG Debug: "SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup' AND start BETWEEN STR_TO_DATE('2020-06-25 05:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-06-26 05:00:00', '%Y-%m-%d %H:%i:%s')":0
+Thu Jun 25 18:33:42 2020 SENT <iq id="qxmpp78" to="ipad1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:lutasklogsearch" sql="" start="" end=""/></iq>
+Thu Jun 25 18:33:42 2020 RECEIVED <presence type="unavailable"><status>Logged out</status><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence></stream:stream>
+Thu Jun 25 18:33:42 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='ipad1@lianup'":0
+Thu Jun 25 18:33:42 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='ipad1@lianup'":0
+Thu Jun 25 18:33:42 2020 WARNING Socket error: The remote host closed the connection
+Thu Jun 25 18:33:42 2020 INFO Socket disconnected for 'ipad1@lianup/LianUp' from ::ffff:192.168.1.159 62661
+Thu Jun 25 18:37:52 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 25 18:52:52 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 25 19:07:46 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_06_25_19_07_46_638.txt":0

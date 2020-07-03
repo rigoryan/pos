@@ -1,0 +1,136 @@
+Tue Jun 23 10:29:05 2020 RECEIVED <iq id="qxmpp1910" type="get"><query xmlns="urn:xmpp:luordersearch" sql="SELECT order_id FROM order_tb WHERE  store='crab_du_jour@lianup' AND  open=false  ORDER BY sequence DESC LIMIT 1 " start="" end=""/></iq>
+Tue Jun 23 10:29:05 2020 DEBUG Debug: "SELECT order_id FROM order_tb WHERE  store='crab_du_jour@lianup' AND  open=false  ORDER BY sequence DESC LIMIT 1 ":0
+Tue Jun 23 10:29:05 2020 SENT <iq id="qxmpp1910" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:luordersearch" sql="" start="" end=""><item order_id="{2147e472-5617-46ca-8aae-981175d06409}"/></query></iq>
+Tue Jun 23 10:29:09 2020 RECEIVED <iq id="qxmpp1912" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:29:09 2020 SENT <iq id="qxmpp1912" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:29:14 2020 RECEIVED <iq id="qxmpp1914" from="station1@lianup" type="set"><query store="crab_du_jour@lianup" xmlns="urn:xmpp:lupayment"><item action="REFUND" amount="0.02" bjid="station1@lianup" card_type="AMEX" cashier="juny@lianup" client_utc="1592922554624" created_on="2020-06-23 10:29:14" ext_info="{&quot;ID&quot;:&quot;{df9ee58b-4efe-4632-971e-7f4a90cac04f}&quot;,&quot;REQUEST&quot;:&quot;PAYMENT_REQUEST_RESPONSE&quot;,&quot;DATA&quot;:{&quot;ECRRefNum&quot;:&quot;station1@lianup&quot;,&quot;OrigRefNum&quot;:&quot;1&quot;,&quot;TenderType&quot;:&quot;CREDIT&quot;,&quot;TransType&quot;:&quot;VOID&quot;},&quot;RESPONSE&quot;:&quot;PROCESS_DONE&quot;,&quot;RESULT&quot;:{&quot;ProcessTransResultCode&quot;:&quot;OK&quot;,&quot;ResultCode&quot;:&quot;000000&quot;,&quot;ResultTxt&quot;:&quot;OK&quot;,&quot;RefNum&quot;:&quot;2&quot;,&quot;RawResponse&quot;:null,&quot;AvsResponse&quot;:&quot;&quot;,&quot;CvResponse&quot;:&quot;&quot;,&quot;Timestamp&quot;:&quot;20200623092910&quot;,&quot;HostCode&quot;:&quot;017514600977&quot;,&quot;RequestedAmount&quot;:&quot;2&quot;,&quot;ApprovedAmount&quot;:&quot;2&quot;,&quot;RemainingBalance&quot;:&quot;&quot;,&quot;ExtraBalance&quot;:&quot;&quot;,&quot;HostResponse&quot;:&quot;00&quot;,&quot;BogusAccountNum&quot;:&quot;1005&quot;,&quot;CardType&quot;:&quot;AMEX&quot;,&quot;Message&quot;:&quot;APPROVAL 863614&quot;,&quot;ExtData&quot;:&quot;&lt;PLCardPresent&gt;0&lt;/PLCardPresent&gt;&lt;PLEntryMode&gt;0&lt;/PLEntryMode&gt;&lt;AmountDue&gt;0&lt;/AmountDue&gt;&lt;TipAmount&gt;0&lt;/TipAmount&gt;&lt;CashBackAmout&gt;0&lt;/CashBackAmout&gt;&lt;MerchantFee&gt;0&lt;/MerchantFee&gt;&lt;TaxAmount&gt;0&lt;/TaxAmount&gt;&lt;ExpDate&gt;0525&lt;/ExpDate&gt;&lt;ECRRefNum&gt;station1@lianup&lt;/ECRRefNum&gt;&lt;BatchNum&gt;1&lt;/BatchNum&gt;&lt;CARDBIN&gt;379235&lt;/CARDBIN&gt;&lt;SN&gt;53532909&lt;/SN&gt;&lt;TC&gt;6D027EEF2A44CE59&lt;/TC&gt;&lt;TVR&gt;0000008000&lt;/TVR&gt;&lt;AID&gt;A000000025010801&lt;/AID&gt;&lt;TSI&gt;F800&lt;/TSI&gt;&lt;ATC&gt;0003&lt;/ATC&gt;&lt;APPLAB&gt;AMERICAN EXPRESS&lt;/APPLAB&gt;&lt;IAD&gt;06580103602002&lt;/IAD&gt;&lt;ARC&gt;00&lt;/ARC&gt;&lt;CID&gt;40&lt;/CID&gt;&lt;CVM&gt;6&lt;/CVM&gt;&quot;,&quot;AuthCode&quot;:&quot;863614&quot;,&quot;SigFileName&quot;:null,&quot;gateway_id&quot;:&quot;station1@lianup&quot;,&quot;gateway_mode&quot;:&quot;http://localhost:6668&quot;,&quot;cc_master_id&quot;:&quot;&quot;},&quot;RECEIPT&quot;:{&quot;Date&quot;:&quot;06/23/2020&quot;,&quot;Time&quot;:&quot;09:29:10&quot;,&quot;PLEntryMode&quot;:&quot;Manual&quot;,&quot;HostCode&quot;:&quot;017514600977&quot;,&quot;BatchNum&quot;:&quot;1&quot;,&quot;ARCMode&quot;:&quot;Issuer&quot;,&quot;TC&quot;:&quot;6D027EEF2A44CE59&quot;,&quot;TVR&quot;:&quot;0000008000&quot;,&quot;AID&quot;:&quot;A000000025010801&quot;,&quot;TSI&quot;:&quot;F800&quot;,&quot;ATC&quot;:&quot;0003&quot;,&quot;APPLAB&quot;:&quot;AMERICAN EXPRESS&quot;,&quot;ARC&quot;:&quot;00&quot;,&quot;IAD&quot;:&quot;06580103602002&quot;,&quot;CID&quot;:&quot;40&quot;},&quot;ESIGN&quot;:{}}" gateway_action="VOID" gateway_kind="PAX" gateway_status="APPROVED" id="{f46c1add-5b14-472b-a41c-42e4ffa4642e}" masked_payment_account="1005" master_id="{caba1228-e025-457b-a00c-85fb64c74ba2}" method="CREDIT" order_id="{2147e472-5617-46ca-8aae-981175d06409}" refund="0.00" settle_utc="1592971200000" status="APPROVED" store="crab_du_jour@lianup" tender="0.00" tip="0.00" total="0.02" transaction_id="{df9ee58b-4efe-4632-971e-7f4a90cac04f}" use_gateway="0"/></query></iq>
+Tue Jun 23 10:29:14 2020 SENT <iq id="qxmpp1914" to="station1@lianup" from="station1@lianup" type="result"><query store="crab_du_jour@lianup" xmlns="urn:xmpp:lupayment"><item action="REFUND" amount="0.02" bjid="station1@lianup" card_type="AMEX" cashier="juny@lianup" client_utc="1592922554624" created_on="2020-06-23 10:29:14" ext_info="{&quot;ID&quot;:&quot;{df9ee58b-4efe-4632-971e-7f4a90cac04f}&quot;,&quot;REQUEST&quot;:&quot;PAYMENT_REQUEST_RESPONSE&quot;,&quot;DATA&quot;:{&quot;ECRRefNum&quot;:&quot;station1@lianup&quot;,&quot;OrigRefNum&quot;:&quot;1&quot;,&quot;TenderType&quot;:&quot;CREDIT&quot;,&quot;TransType&quot;:&quot;VOID&quot;},&quot;RESPONSE&quot;:&quot;PROCESS_DONE&quot;,&quot;RESULT&quot;:{&quot;ProcessTransResultCode&quot;:&quot;OK&quot;,&quot;ResultCode&quot;:&quot;000000&quot;,&quot;ResultTxt&quot;:&quot;OK&quot;,&quot;RefNum&quot;:&quot;2&quot;,&quot;RawResponse&quot;:null,&quot;AvsResponse&quot;:&quot;&quot;,&quot;CvResponse&quot;:&quot;&quot;,&quot;Timestamp&quot;:&quot;20200623092910&quot;,&quot;HostCode&quot;:&quot;017514600977&quot;,&quot;RequestedAmount&quot;:&quot;2&quot;,&quot;ApprovedAmount&quot;:&quot;2&quot;,&quot;RemainingBalance&quot;:&quot;&quot;,&quot;ExtraBalance&quot;:&quot;&quot;,&quot;HostResponse&quot;:&quot;00&quot;,&quot;BogusAccountNum&quot;:&quot;1005&quot;,&quot;CardType&quot;:&quot;AMEX&quot;,&quot;Message&quot;:&quot;APPROVAL 863614&quot;,&quot;ExtData&quot;:&quot;&lt;PLCardPresent&gt;0&lt;/PLCardPresent&gt;&lt;PLEntryMode&gt;0&lt;/PLEntryMode&gt;&lt;AmountDue&gt;0&lt;/AmountDue&gt;&lt;TipAmount&gt;0&lt;/TipAmount&gt;&lt;CashBackAmout&gt;0&lt;/CashBackAmout&gt;&lt;MerchantFee&gt;0&lt;/MerchantFee&gt;&lt;TaxAmount&gt;0&lt;/TaxAmount&gt;&lt;ExpDate&gt;0525&lt;/ExpDate&gt;&lt;ECRRefNum&gt;station1@lianup&lt;/ECRRefNum&gt;&lt;BatchNum&gt;1&lt;/BatchNum&gt;&lt;CARDBIN&gt;379235&lt;/CARDBIN&gt;&lt;SN&gt;53532909&lt;/SN&gt;&lt;TC&gt;6D027EEF2A44CE59&lt;/TC&gt;&lt;TVR&gt;0000008000&lt;/TVR&gt;&lt;AID&gt;A000000025010801&lt;/AID&gt;&lt;TSI&gt;F800&lt;/TSI&gt;&lt;ATC&gt;0003&lt;/ATC&gt;&lt;APPLAB&gt;AMERICAN EXPRESS&lt;/APPLAB&gt;&lt;IAD&gt;06580103602002&lt;/IAD&gt;&lt;ARC&gt;00&lt;/ARC&gt;&lt;CID&gt;40&lt;/CID&gt;&lt;CVM&gt;6&lt;/CVM&gt;&quot;,&quot;AuthCode&quot;:&quot;863614&quot;,&quot;SigFileName&quot;:null,&quot;gateway_id&quot;:&quot;station1@lianup&quot;,&quot;gateway_mode&quot;:&quot;http://localhost:6668&quot;,&quot;cc_master_id&quot;:&quot;&quot;},&quot;RECEIPT&quot;:{&quot;Date&quot;:&quot;06/23/2020&quot;,&quot;Time&quot;:&quot;09:29:10&quot;,&quot;PLEntryMode&quot;:&quot;Manual&quot;,&quot;HostCode&quot;:&quot;017514600977&quot;,&quot;BatchNum&quot;:&quot;1&quot;,&quot;ARCMode&quot;:&quot;Issuer&quot;,&quot;TC&quot;:&quot;6D027EEF2A44CE59&quot;,&quot;TVR&quot;:&quot;0000008000&quot;,&quot;AID&quot;:&quot;A000000025010801&quot;,&quot;TSI&quot;:&quot;F800&quot;,&quot;ATC&quot;:&quot;0003&quot;,&quot;APPLAB&quot;:&quot;AMERICAN EXPRESS&quot;,&quot;ARC&quot;:&quot;00&quot;,&quot;IAD&quot;:&quot;06580103602002&quot;,&quot;CID&quot;:&quot;40&quot;},&quot;ESIGN&quot;:{}}" gateway_action="VOID" gateway_kind="PAX" gateway_status="APPROVED" id="{f46c1add-5b14-472b-a41c-42e4ffa4642e}" masked_payment_account="1005" master_id="{caba1228-e025-457b-a00c-85fb64c74ba2}" method="CREDIT" order_id="{2147e472-5617-46ca-8aae-981175d06409}" refund="0.00" settle_utc="1592971200000" status="APPROVED" store="crab_du_jour@lianup" tender="0.00" tip="0.00" total="0.02" transaction_id="{df9ee58b-4efe-4632-971e-7f4a90cac04f}" use_gateway="0"/></query></iq>
+Tue Jun 23 10:29:14 2020 RECEIVED <iq id="qxmpp1916" from="station1@lianup" type="get"><query store="" xmlns="urn:xmpp:lucreditcard"><item id="{df9ee58b-4efe-4632-971e-7f4a90cac04f}"/></query></iq><iq id="qxmpp1917" from="station1@lianup" type="set"><query xmlns="urn:xmpp:luorder" store="crab_du_jour@lianup"><item store="crab_du_jour@lianup" order_id="{2147e472-5617-46ca-8aae-981175d06409}" status="CANCEL" price_no_tax="5.52" price_with_tax="5.52" tax_price="0" tax="1" discount_by_percentage="0" discount_by_credit="0" gratitude_by_percentage="0" gratitude_by_credit="0" open="0" kind="DINEIN" sequence="13258" daily_sequence="20" table_id="{b77bcb70-2ea1-40a2-9e55-86f324d44deb}" server="juny@lianup" cashier="juny@lianup" num_of_adult="0" num_of_senior="0" num_of_kid="0" num_of_free="0" created_on="2020-06-23 10:18:59"/></query></iq>
+Tue Jun 23 10:29:14 2020 SENT <iq id="qxmpp1916" to="station1@lianup" type="result"><query store="" xmlns="urn:xmpp:lucreditcard"><item Server_utc="1592922554626" action="VOID" amount="0.02" authorization_code="863614" bjid="station1@lianup" card_type="AMEX" cashier="juny@lianup" client_utc="1592922554624" created_on="2020-06-23 10:29:14" ext_info="{&quot;ID&quot;:&quot;{df9ee58b-4efe-4632-971e-7f4a90cac04f}&quot;,&quot;REQUEST&quot;:&quot;PAYMENT_REQUEST_RESPONSE&quot;,&quot;DATA&quot;:{&quot;ECRRefNum&quot;:&quot;station1@lianup&quot;,&quot;OrigRefNum&quot;:&quot;1&quot;,&quot;TenderType&quot;:&quot;CREDIT&quot;,&quot;TransType&quot;:&quot;VOID&quot;},&quot;RESPONSE&quot;:&quot;PROCESS_DONE&quot;,&quot;RESULT&quot;:{&quot;ProcessTransResultCode&quot;:&quot;OK&quot;,&quot;ResultCode&quot;:&quot;000000&quot;,&quot;ResultTxt&quot;:&quot;OK&quot;,&quot;RefNum&quot;:&quot;2&quot;,&quot;RawResponse&quot;:null,&quot;AvsResponse&quot;:&quot;&quot;,&quot;CvResponse&quot;:&quot;&quot;,&quot;Timestamp&quot;:&quot;20200623092910&quot;,&quot;HostCode&quot;:&quot;017514600977&quot;,&quot;RequestedAmount&quot;:&quot;2&quot;,&quot;ApprovedAmount&quot;:&quot;2&quot;,&quot;RemainingBalance&quot;:&quot;&quot;,&quot;ExtraBalance&quot;:&quot;&quot;,&quot;HostResponse&quot;:&quot;00&quot;,&quot;BogusAccountNum&quot;:&quot;1005&quot;,&quot;CardType&quot;:&quot;AMEX&quot;,&quot;Message&quot;:&quot;APPROVAL 863614&quot;,&quot;ExtData&quot;:&quot;&lt;PLCardPresent&gt;0&lt;/PLCardPresent&gt;&lt;PLEntryMode&gt;0&lt;/PLEntryMode&gt;&lt;AmountDue&gt;0&lt;/AmountDue&gt;&lt;TipAmount&gt;0&lt;/TipAmount&gt;&lt;CashBackAmout&gt;0&lt;/CashBackAmout&gt;&lt;MerchantFee&gt;0&lt;/MerchantFee&gt;&lt;TaxAmount&gt;0&lt;/TaxAmount&gt;&lt;ExpDate&gt;0525&lt;/ExpDate&gt;&lt;ECRRefNum&gt;station1@lianup&lt;/ECRRefNum&gt;&lt;BatchNum&gt;1&lt;/BatchNum&gt;&lt;CARDBIN&gt;379235&lt;/CARDBIN&gt;&lt;SN&gt;53532909&lt;/SN&gt;&lt;TC&gt;6D027EEF2A44CE59&lt;/TC&gt;&lt;TVR&gt;0000008000&lt;/TVR&gt;&lt;AID&gt;A000000025010801&lt;/AID&gt;&lt;TSI&gt;F800&lt;/TSI&gt;&lt;ATC&gt;0003&lt;/ATC&gt;&lt;APPLAB&gt;AMERICAN EXPRESS&lt;/APPLAB&gt;&lt;IAD&gt;06580103602002&lt;/IAD&gt;&lt;ARC&gt;00&lt;/ARC&gt;&lt;CID&gt;40&lt;/CID&gt;&lt;CVM&gt;6&lt;/CVM&gt;&quot;,&quot;AuthCode&quot;:&quot;863614&quot;,&quot;SigFileName&quot;:null,&quot;gateway_id&quot;:&quot;station1@lianup&quot;,&quot;gateway_mode&quot;:&quot;http://localhost:6668&quot;,&quot;cc_master_id&quot;:&quot;&quot;},&quot;RECEIPT&quot;:{&quot;Date&quot;:&quot;06/23/2020&quot;,&quot;Time&quot;:&quot;09:29:10&quot;,&quot;PLEntryMode&quot;:&quot;Manual&quot;,&quot;HostCode&quot;:&quot;017514600977&quot;,&quot;BatchNum&quot;:&quot;1&quot;,&quot;ARCMode&quot;:&quot;Issuer&quot;,&quot;TC&quot;:&quot;6D027EEF2A44CE59&quot;,&quot;TVR&quot;:&quot;0000008000&quot;,&quot;AID&quot;:&quot;A000000025010801&quot;,&quot;TSI&quot;:&quot;F800&quot;,&quot;ATC&quot;:&quot;0003&quot;,&quot;APPLAB&quot;:&quot;AMERICAN EXPRESS&quot;,&quot;ARC&quot;:&quot;00&quot;,&quot;IAD&quot;:&quot;06580103602002&quot;,&quot;CID&quot;:&quot;40&quot;},&quot;ESIGN&quot;:{}}" gateway_id="station1@lianup" gateway_kind="PAX" gateway_mode="http://localhost:6668" id="{df9ee58b-4efe-4632-971e-7f4a90cac04f}" masked_payment_account="1005" message="OK, APPROVAL 863614" order_id="{2147e472-5617-46ca-8aae-981175d06409}" payment_id="{f46c1add-5b14-472b-a41c-42e4ffa4642e}" response_approved="1" status="000000" store="crab_du_jour@lianup" transaction_id="2"/></query></iq>
+Tue Jun 23 10:29:14 2020 DEBUG Debug: daily seq:  20:0
+Tue Jun 23 10:29:14 2020 SENT <iq id="qxmpp1917" to="station1@lianup" from="station1@lianup" type="set"><query xmlns="urn:xmpp:luorder" store="crab_du_jour@lianup"><item store="crab_du_jour@lianup" order_id="{2147e472-5617-46ca-8aae-981175d06409}" status="CANCEL" price_no_tax="5.52" price_with_tax="5.52" tax_price="0" tax="1" discount_by_percentage="0" discount_by_credit="0" gratitude_by_percentage="0" gratitude_by_credit="0" open="0" kind="DINEIN" sequence="13258" daily_sequence="20" table_id="{b77bcb70-2ea1-40a2-9e55-86f324d44deb}" server="juny@lianup" cashier="juny@lianup" num_of_adult="0" num_of_senior="0" num_of_kid="0" num_of_free="0" created_on="2020-06-23 10:18:59"/></query></iq>
+Tue Jun 23 10:30:09 2020 RECEIVED <iq id="qxmpp1920" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:30:09 2020 SENT <iq id="qxmpp1920" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:31:09 2020 RECEIVED <iq id="qxmpp1922" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:31:09 2020 SENT <iq id="qxmpp1922" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:32:09 2020 RECEIVED <iq id="qxmpp1924" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:32:09 2020 SENT <iq id="qxmpp1924" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:33:09 2020 RECEIVED <iq id="qxmpp1926" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:33:09 2020 SENT <iq id="qxmpp1926" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:33:25 2020 DEBUG Debug: settle work is working ...:0
+Tue Jun 23 10:34:09 2020 RECEIVED <iq id="qxmpp1928" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:34:09 2020 SENT <iq id="qxmpp1928" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:35:09 2020 RECEIVED <iq id="qxmpp1930" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:35:09 2020 SENT <iq id="qxmpp1930" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:36:09 2020 RECEIVED <iq id="qxmpp1932" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:36:09 2020 SENT <iq id="qxmpp1932" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:37:09 2020 RECEIVED <iq id="qxmpp1934" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:37:09 2020 SENT <iq id="qxmpp1934" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:38:09 2020 RECEIVED <iq id="qxmpp1936" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:38:09 2020 SENT <iq id="qxmpp1936" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:39:09 2020 RECEIVED <iq id="qxmpp1938" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:39:09 2020 SENT <iq id="qxmpp1938" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:40:09 2020 RECEIVED <iq id="qxmpp1940" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:40:09 2020 SENT <iq id="qxmpp1940" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:41:09 2020 RECEIVED <iq id="qxmpp1942" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:41:09 2020 SENT <iq id="qxmpp1942" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:42:09 2020 RECEIVED <iq id="qxmpp1944" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:42:09 2020 SENT <iq id="qxmpp1944" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:43:09 2020 RECEIVED <iq id="qxmpp1946" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:43:09 2020 SENT <iq id="qxmpp1946" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:44:09 2020 RECEIVED <iq id="qxmpp1948" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:44:09 2020 SENT <iq id="qxmpp1948" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:45:09 2020 RECEIVED <iq id="qxmpp1950" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:45:09 2020 SENT <iq id="qxmpp1950" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:46:09 2020 RECEIVED <iq id="qxmpp1952" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:46:09 2020 SENT <iq id="qxmpp1952" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:47:09 2020 RECEIVED <iq id="qxmpp1954" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:47:09 2020 SENT <iq id="qxmpp1954" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:48:09 2020 RECEIVED <iq id="qxmpp1956" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:48:09 2020 SENT <iq id="qxmpp1956" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:48:25 2020 DEBUG Debug: settle work is working ...:0
+Tue Jun 23 10:49:09 2020 RECEIVED <iq id="qxmpp1958" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:49:09 2020 SENT <iq id="qxmpp1958" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:50:09 2020 RECEIVED <iq id="qxmpp1960" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:50:09 2020 SENT <iq id="qxmpp1960" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:51:09 2020 RECEIVED <iq id="qxmpp1962" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:51:09 2020 SENT <iq id="qxmpp1962" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:52:09 2020 RECEIVED <iq id="qxmpp1964" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:52:09 2020 SENT <iq id="qxmpp1964" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:53:09 2020 RECEIVED <iq id="qxmpp1966" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:53:09 2020 SENT <iq id="qxmpp1966" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:54:09 2020 RECEIVED <iq id="qxmpp1968" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:54:09 2020 SENT <iq id="qxmpp1968" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:55:09 2020 RECEIVED <iq id="qxmpp1970" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:55:09 2020 SENT <iq id="qxmpp1970" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:56:09 2020 RECEIVED <iq id="qxmpp1972" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:56:09 2020 SENT <iq id="qxmpp1972" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:57:09 2020 RECEIVED <iq id="qxmpp1974" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:57:09 2020 SENT <iq id="qxmpp1974" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:58:09 2020 RECEIVED <iq id="qxmpp1976" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:58:09 2020 SENT <iq id="qxmpp1976" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 10:59:09 2020 RECEIVED <iq id="qxmpp1978" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 10:59:09 2020 SENT <iq id="qxmpp1978" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:00:09 2020 RECEIVED <iq id="qxmpp1980" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:00:09 2020 SENT <iq id="qxmpp1980" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:01:09 2020 RECEIVED <iq id="qxmpp1982" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:01:09 2020 SENT <iq id="qxmpp1982" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:02:09 2020 RECEIVED <iq id="qxmpp1984" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:02:09 2020 SENT <iq id="qxmpp1984" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:03:09 2020 RECEIVED <iq id="qxmpp1986" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:03:09 2020 SENT <iq id="qxmpp1986" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:03:26 2020 DEBUG Debug: settle work is working ...:0
+Tue Jun 23 11:04:09 2020 RECEIVED <iq id="qxmpp1988" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:04:09 2020 SENT <iq id="qxmpp1988" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:05:09 2020 RECEIVED <iq id="qxmpp1990" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:05:09 2020 SENT <iq id="qxmpp1990" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:06:09 2020 RECEIVED <iq id="qxmpp1992" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:06:09 2020 SENT <iq id="qxmpp1992" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:07:09 2020 RECEIVED <iq id="qxmpp1994" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:07:09 2020 SENT <iq id="qxmpp1994" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:08:09 2020 RECEIVED <iq id="qxmpp1996" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:08:09 2020 SENT <iq id="qxmpp1996" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:09:09 2020 RECEIVED <iq id="qxmpp1998" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:09:09 2020 SENT <iq id="qxmpp1998" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:10:09 2020 RECEIVED <iq id="qxmpp2000" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:10:09 2020 SENT <iq id="qxmpp2000" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:11:09 2020 RECEIVED <iq id="qxmpp2002" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:11:09 2020 SENT <iq id="qxmpp2002" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:12:09 2020 RECEIVED <iq id="qxmpp2004" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:12:09 2020 SENT <iq id="qxmpp2004" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:13:09 2020 RECEIVED <iq id="qxmpp2006" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:13:09 2020 SENT <iq id="qxmpp2006" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:14:09 2020 RECEIVED <iq id="qxmpp2008" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:14:09 2020 SENT <iq id="qxmpp2008" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:15:09 2020 RECEIVED <iq id="qxmpp2010" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:15:09 2020 SENT <iq id="qxmpp2010" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:16:09 2020 RECEIVED <iq id="qxmpp2012" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:16:09 2020 SENT <iq id="qxmpp2012" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:16:57 2020 RECEIVED <iq id="qxmpp2014" type="get"><time xmlns="urn:xmpp:time"/></iq>
+Tue Jun 23 11:16:57 2020 SENT <iq id="qxmpp2014" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-06-23T15:16:57.703Z</utc></time></iq>
+Tue Jun 23 11:17:09 2020 RECEIVED <iq id="qxmpp2016" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:17:09 2020 SENT <iq id="qxmpp2016" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:18:09 2020 RECEIVED <iq id="qxmpp2018" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:18:09 2020 SENT <iq id="qxmpp2018" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:18:26 2020 DEBUG Debug: settle work is working ...:0
+Tue Jun 23 11:19:09 2020 RECEIVED <iq id="qxmpp2020" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:19:09 2020 SENT <iq id="qxmpp2020" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:20:09 2020 RECEIVED <iq id="qxmpp2022" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:20:09 2020 SENT <iq id="qxmpp2022" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:21:09 2020 RECEIVED <iq id="qxmpp2024" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:21:09 2020 SENT <iq id="qxmpp2024" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:22:09 2020 RECEIVED <iq id="qxmpp2026" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:22:09 2020 SENT <iq id="qxmpp2026" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:23:09 2020 RECEIVED <iq id="qxmpp2028" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:23:09 2020 SENT <iq id="qxmpp2028" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:24:09 2020 RECEIVED <iq id="qxmpp2030" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:24:09 2020 SENT <iq id="qxmpp2030" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:25:09 2020 RECEIVED <iq id="qxmpp2032" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:25:09 2020 SENT <iq id="qxmpp2032" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:26:09 2020 RECEIVED <iq id="qxmpp2034" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:26:09 2020 SENT <iq id="qxmpp2034" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:27:09 2020 RECEIVED <iq id="qxmpp2036" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:27:09 2020 SENT <iq id="qxmpp2036" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:28:09 2020 RECEIVED <iq id="qxmpp2038" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Tue Jun 23 11:28:09 2020 SENT <iq id="qxmpp2038" to="station1@lianup/LianUp" type="result"/>
+Tue Jun 23 11:28:31 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_06_23_11_28_31_185.txt":0

@@ -1,0 +1,31 @@
+Wed Jun 24 12:28:39 2020 RECEIVED <iq id="qxmpp131" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:28:39 2020 SENT <iq id="qxmpp131" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:29:39 2020 RECEIVED <iq id="qxmpp133" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:29:39 2020 SENT <iq id="qxmpp133" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:30:39 2020 RECEIVED <iq id="qxmpp135" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:30:39 2020 SENT <iq id="qxmpp135" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:31:39 2020 RECEIVED <iq id="qxmpp137" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:31:39 2020 SENT <iq id="qxmpp137" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:32:39 2020 RECEIVED <iq id="qxmpp139" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:32:39 2020 SENT <iq id="qxmpp139" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:33:39 2020 RECEIVED <iq id="qxmpp141" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:33:39 2020 SENT <iq id="qxmpp141" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:34:33 2020 DEBUG Debug: settle work is working ...:0
+Wed Jun 24 12:34:39 2020 RECEIVED <iq id="qxmpp143" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:34:39 2020 SENT <iq id="qxmpp143" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:35:39 2020 RECEIVED <iq id="qxmpp145" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:35:39 2020 SENT <iq id="qxmpp145" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:36:39 2020 RECEIVED <iq id="qxmpp147" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:36:39 2020 SENT <iq id="qxmpp147" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:37:39 2020 RECEIVED <iq id="qxmpp149" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:37:39 2020 SENT <iq id="qxmpp149" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:38:39 2020 RECEIVED <iq id="qxmpp151" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:38:39 2020 SENT <iq id="qxmpp151" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:39:39 2020 RECEIVED <iq id="qxmpp153" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Wed Jun 24 12:39:39 2020 SENT <iq id="qxmpp153" to="station1@lianup/LianUp" type="result"/>
+Wed Jun 24 12:39:57 2020 WARNING Socket error: The remote host closed the connection
+Wed Jun 24 12:39:57 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 63740
+Wed Jun 24 12:49:33 2020 DEBUG Debug: settle work is working ...:0
+Wed Jun 24 13:04:33 2020 DEBUG Debug: settle work is working ...:0
+Wed Jun 24 13:19:34 2020 DEBUG Debug: settle work is working ...:0
+Wed Jun 24 13:28:32 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_06_24_13_28_32_311.txt":0

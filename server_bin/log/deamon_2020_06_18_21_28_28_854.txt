@@ -1,0 +1,315 @@
+Thu Jun 18 21:29:26 2020 RECEIVED <iq id="qxmpp1725" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 21:29:26 2020 SENT <iq id="qxmpp1725" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 21:29:57 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 18 21:30:26 2020 RECEIVED <iq id="qxmpp1727" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 21:30:26 2020 SENT <iq id="qxmpp1727" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 21:31:26 2020 RECEIVED <iq id="qxmpp1729" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 21:31:26 2020 SENT <iq id="qxmpp1729" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 21:32:26 2020 RECEIVED <iq id="qxmpp1731" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 21:32:26 2020 SENT <iq id="qxmpp1731" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 21:33:04 2020 RECEIVED <presence type="unavailable"><status>Logged out</status><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence></stream:stream>
+Thu Jun 18 21:33:04 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 21:33:04 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Thu Jun 18 21:33:04 2020 WARNING Socket error: The remote host closed the connection
+Thu Jun 18 21:33:04 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 59190
+Thu Jun 18 21:41:42 2020 INFO Incoming client connection from ::1 58597
+Thu Jun 18 21:41:42 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 18 21:41:42 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="AFk0ax2LAuQOCVEUawKzYGOYvmdsHCRV" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 18 21:41:42 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Thu Jun 18 21:41:42 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Thu Jun 18 21:41:42 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9InBoT0ZOK0M2VTRFa1FiYkFqNEtQRHc2dkRJVU1JczZkZ3hWTUhRYVBqQ1k9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Thu Jun 18 21:41:42 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9Ill0T1RNZjFJRHpCdVQvQ1B6SHFiTGFNUDN6NGMyU21nbFdkSjJEeFhWR009IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9InBoT0ZOK0M2VTRFa1FiYkFqNEtQRHc2dkRJVU1JczZkZ3hWTUhRYVBqQ1k9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9Njk5Y2QxZmU3YTFjOTcwMTkwYmRiOTFkOTAzNzcyM2QsdXNlcm5hbWU9c3RhdGlvbjE=</response>
+Thu Jun 18 21:41:42 2020 DEBUG Debug: received password request :  "station1@lianup"   "":0
+Thu Jun 18 21:41:42 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='station1@lianup'":0
+Thu Jun 18 21:41:42 2020 DEBUG Debug: is valid true:0
+Thu Jun 18 21:41:42 2020 DEBUG Debug: passcode is :  "1234":0
+Thu Jun 18 21:41:42 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD1hMjNjZDUyMzRjMDBkODg0ZDIxZTIzMTE4MGI2YjQ2ZQ==</challenge>
+Thu Jun 18 21:41:42 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 18 21:41:42 2020 INFO Authentication succeeded for 'station1@lianup' from ::1 58597
+Thu Jun 18 21:41:42 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 18 21:41:42 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 18 21:41:42 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="bnPak1JTeJi5C1zWhqfgDeU2dJjqmvjo" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 18 21:41:42 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Thu Jun 18 21:41:42 2020 RECEIVED <iq id="qxmpp3" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Thu Jun 18 21:41:42 2020 SENT <iq id="qxmpp3" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>station1@lianup/LianUp</jid></bind></iq>
+Thu Jun 18 21:41:42 2020 RECEIVED <iq id="qxmpp5" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Thu Jun 18 21:41:42 2020 SENT <iq id="qxmpp5" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 21:41:42 2020 RECEIVED <iq id="qxmpp7" to="station1@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp8" type="get"><time xmlns="urn:xmpp:time"/></iq><iq id="qxmpp9" from="station1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Thu Jun 18 21:41:42 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 21:41:42 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 21:41:42 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 21:41:42 2020 SENT <iq id="qxmpp7" to="station1@lianup/LianUp" from="station1@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>station1</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:41:42 2020 SENT <iq id="qxmpp8" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-06-19T01:41:42.575Z</utc></time></iq>
+Thu Jun 18 21:41:42 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 21:41:42 2020 SENT <iq id="qxmpp9" to="station1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Thu Jun 18 21:41:42 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 21:41:42 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Thu Jun 18 21:41:45 2020 RECEIVED <iq id="qxmpp16" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:41:45 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 21:41:45 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 21:41:45 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 21:41:45 2020 SENT <iq id="qxmpp16" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:41:46 2020 RECEIVED <iq id="qxmpp22" to="juny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp23" to="leowang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp24" to="liang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp25" to="lindenglan@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 21:41:46 2020 SENT <iq id="qxmpp22" to="station1@lianup/LianUp" from="juny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>junny</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 21:41:46 2020 SENT <iq id="qxmpp23" to="station1@lianup/LianUp" from="leowang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>leo</GIVEN><FAMILY>wang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 21:41:46 2020 SENT <iq id="qxmpp24" to="station1@lianup/LianUp" from="liang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>liang</GIVEN><FAMILY>jiang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 21:41:46 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 21:41:46 2020 SENT <iq id="qxmpp25" to="station1@lianup/LianUp" from="lindenglan@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>lindeng</GIVEN><FAMILY>lan</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:41:49 2020 RECEIVED <iq id="qxmpp38" type="get"><query xmlns="urn:xmpp:lutasklogsearch" sql="SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup'" start="2020-06-18 05:00:00" end="2020-06-19 05:00:00"/></iq>
+Thu Jun 18 21:41:49 2020 DEBUG Debug: "SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup' AND start BETWEEN STR_TO_DATE('2020-06-18 05:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-06-19 05:00:00', '%Y-%m-%d %H:%i:%s')":0
+Thu Jun 18 21:41:49 2020 SENT <iq id="qxmpp38" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:lutasklogsearch" sql="" start="" end=""/></iq>
+Thu Jun 18 21:41:50 2020 RECEIVED <presence type="unavailable"><status>Logged out</status><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence></stream:stream>
+Thu Jun 18 21:41:50 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 21:41:50 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Thu Jun 18 21:41:50 2020 WARNING Socket error: The remote host closed the connection
+Thu Jun 18 21:41:50 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 58597
+Thu Jun 18 21:42:00 2020 INFO Incoming client connection from ::1 58611
+Thu Jun 18 21:42:00 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 18 21:42:00 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="pY56wUISGIw7T1DZW5coaddeg7SMvkEq" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 18 21:42:00 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Thu Jun 18 21:42:00 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Thu Jun 18 21:42:00 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9InltVHErbzhUWVZVZHJ6T1RWdUxoTFdtOTJWeUZ2QkNJRURkS2xIb3RXU0E9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Thu Jun 18 21:42:00 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9InpWMGRoc3lNOVNwd3pmRVhzdGFmRTRDZVRCdXhyTUJndUNXY0tKRU9UMFk9IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9InltVHErbzhUWVZVZHJ6T1RWdUxoTFdtOTJWeUZ2QkNJRURkS2xIb3RXU0E9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9NDU0NjAwZTQyZmU3YTc5NDgyN2NlOWJlMzk2MjdjZjYsdXNlcm5hbWU9c3RhdGlvbjE=</response>
+Thu Jun 18 21:42:00 2020 DEBUG Debug: received password request :  "station1@lianup"   "":0
+Thu Jun 18 21:42:00 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='station1@lianup'":0
+Thu Jun 18 21:42:00 2020 DEBUG Debug: is valid true:0
+Thu Jun 18 21:42:00 2020 DEBUG Debug: passcode is :  "1234":0
+Thu Jun 18 21:42:00 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD1kMjA2NmY2M2I0NTZhZWRlYWIyOTAxZWI2MWM1OTcwOQ==</challenge>
+Thu Jun 18 21:42:00 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 18 21:42:00 2020 INFO Authentication succeeded for 'station1@lianup' from ::1 58611
+Thu Jun 18 21:42:00 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 18 21:42:00 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 18 21:42:00 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="2KepTpgVK85x5yLdIxZUHWaXH5IutIB6" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 18 21:42:00 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Thu Jun 18 21:42:00 2020 RECEIVED <iq id="qxmpp42" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Thu Jun 18 21:42:00 2020 SENT <iq id="qxmpp42" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>station1@lianup/LianUp</jid></bind></iq>
+Thu Jun 18 21:42:00 2020 RECEIVED <iq id="qxmpp44" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Thu Jun 18 21:42:00 2020 SENT <iq id="qxmpp44" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 21:42:00 2020 RECEIVED <iq id="qxmpp46" to="station1@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp47" type="get"><time xmlns="urn:xmpp:time"/></iq><iq id="qxmpp48" from="station1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Thu Jun 18 21:42:00 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 21:42:00 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 21:42:00 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 21:42:00 2020 SENT <iq id="qxmpp46" to="station1@lianup/LianUp" from="station1@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>station1</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:42:00 2020 SENT <iq id="qxmpp47" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-06-19T01:42:00.734Z</utc></time></iq>
+Thu Jun 18 21:42:00 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 21:42:00 2020 SENT <iq id="qxmpp48" to="station1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Thu Jun 18 21:42:00 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 21:42:00 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Thu Jun 18 21:42:01 2020 RECEIVED <iq id="qxmpp55" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:42:01 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 21:42:01 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 21:42:01 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 21:42:01 2020 SENT <iq id="qxmpp55" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:42:02 2020 RECEIVED <iq id="qxmpp59" to="juny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp60" to="leowang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp61" to="liang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp62" to="lindenglan@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 21:42:02 2020 SENT <iq id="qxmpp59" to="station1@lianup/LianUp" from="juny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>junny</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 21:42:02 2020 SENT <iq id="qxmpp60" to="station1@lianup/LianUp" from="leowang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>leo</GIVEN><FAMILY>wang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 21:42:02 2020 SENT <iq id="qxmpp61" to="station1@lianup/LianUp" from="liang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>liang</GIVEN><FAMILY>jiang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 21:42:02 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 21:42:02 2020 SENT <iq id="qxmpp62" to="station1@lianup/LianUp" from="lindenglan@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>lindeng</GIVEN><FAMILY>lan</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 21:42:04 2020 RECEIVED <iq id="qxmpp77" type="get"><query xmlns="urn:xmpp:lutasklogsearch" sql="SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup'" start="2020-06-18 05:00:00" end="2020-06-19 05:00:00"/></iq>
+Thu Jun 18 21:42:04 2020 DEBUG Debug: "SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup' AND start BETWEEN STR_TO_DATE('2020-06-18 05:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-06-19 05:00:00', '%Y-%m-%d %H:%i:%s')":0
+Thu Jun 18 21:42:04 2020 SENT <iq id="qxmpp77" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:lutasklogsearch" sql="" start="" end=""/></iq>
+Thu Jun 18 21:42:05 2020 RECEIVED <presence type="unavailable"><status>Logged out</status><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence></stream:stream>
+Thu Jun 18 21:42:05 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 21:42:05 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Thu Jun 18 21:42:05 2020 WARNING Socket error: The remote host closed the connection
+Thu Jun 18 21:42:05 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 58611
+Thu Jun 18 21:44:57 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 18 21:59:57 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 18 22:00:46 2020 INFO Incoming client connection from ::1 59019
+Thu Jun 18 22:00:46 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 18 22:00:46 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="vePh0mi7vALllseEzEo6TzEnTJgwQb4K" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 18 22:00:46 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Thu Jun 18 22:00:46 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Thu Jun 18 22:00:46 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9IlFmMW53aFBuMUJqdnA5dVduNW1aeFU1THVTcDExQmRsREVYdjR4Uk9za2M9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Thu Jun 18 22:00:46 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9IitkKzQ2WXd6WTBjRnZwek4xWUg4TWJBZW8zTDc4Wm5nS3RibnpsdXgxeEk9IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9IlFmMW53aFBuMUJqdnA5dVduNW1aeFU1THVTcDExQmRsREVYdjR4Uk9za2M9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9YjMyM2FhYmZiZTBjYzRmOWY0MzkxOWE3ZGNhMGRiODEsdXNlcm5hbWU9c3RhdGlvbjE=</response>
+Thu Jun 18 22:00:46 2020 DEBUG Debug: received password request :  "station1@lianup"   "":0
+Thu Jun 18 22:00:46 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='station1@lianup'":0
+Thu Jun 18 22:00:46 2020 DEBUG Debug: is valid true:0
+Thu Jun 18 22:00:46 2020 DEBUG Debug: passcode is :  "1234":0
+Thu Jun 18 22:00:46 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD05YzE1ZDhmYTE2NzE3YmIwNDg1ZDc5MzkyN2FhNTAyMw==</challenge>
+Thu Jun 18 22:00:46 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 18 22:00:46 2020 INFO Authentication succeeded for 'station1@lianup' from ::1 59019
+Thu Jun 18 22:00:46 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 18 22:00:46 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 18 22:00:46 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="VfxgAvAUfTL9rszEWGuKRuppcOC8QlXE" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 18 22:00:46 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Thu Jun 18 22:00:46 2020 RECEIVED <iq id="qxmpp3" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Thu Jun 18 22:00:46 2020 SENT <iq id="qxmpp3" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>station1@lianup/LianUp</jid></bind></iq>
+Thu Jun 18 22:00:46 2020 RECEIVED <iq id="qxmpp5" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Thu Jun 18 22:00:46 2020 SENT <iq id="qxmpp5" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:00:46 2020 RECEIVED <iq id="qxmpp7" to="station1@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp8" type="get"><time xmlns="urn:xmpp:time"/></iq><iq id="qxmpp9" from="station1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Thu Jun 18 22:00:46 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 22:00:46 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 22:00:46 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 22:00:46 2020 SENT <iq id="qxmpp7" to="station1@lianup/LianUp" from="station1@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>station1</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:00:46 2020 SENT <iq id="qxmpp8" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-06-19T02:00:46.534Z</utc></time></iq>
+Thu Jun 18 22:00:46 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 22:00:46 2020 SENT <iq id="qxmpp9" to="station1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Thu Jun 18 22:00:46 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 22:00:46 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Thu Jun 18 22:00:47 2020 RECEIVED <iq id="qxmpp16" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:00:47 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 22:00:47 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 22:00:47 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 22:00:47 2020 SENT <iq id="qxmpp16" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:00:48 2020 RECEIVED <iq id="qxmpp20" to="juny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp21" to="leowang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp22" to="liang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp23" to="lindenglan@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 22:00:48 2020 SENT <iq id="qxmpp20" to="station1@lianup/LianUp" from="juny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>junny</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 22:00:48 2020 SENT <iq id="qxmpp21" to="station1@lianup/LianUp" from="leowang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>leo</GIVEN><FAMILY>wang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 22:00:48 2020 SENT <iq id="qxmpp22" to="station1@lianup/LianUp" from="liang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>liang</GIVEN><FAMILY>jiang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 22:00:48 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 22:00:48 2020 SENT <iq id="qxmpp23" to="station1@lianup/LianUp" from="lindenglan@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>lindeng</GIVEN><FAMILY>lan</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:01:07 2020 WARNING Socket error: The remote host closed the connection
+Thu Jun 18 22:01:07 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 59019
+Thu Jun 18 22:01:33 2020 INFO Incoming client connection from ::1 59061
+Thu Jun 18 22:01:33 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 18 22:01:33 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="SfLzKfKmlWRcy6h085cGMRYB4u93X9GD" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 18 22:01:33 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Thu Jun 18 22:01:33 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Thu Jun 18 22:01:33 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9IkVrdDdvODJwMjd4OGJqWGJEa1h2TU1ZeUpBREhqdmIyZmpqQ1p3RWR3aTQ9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Thu Jun 18 22:01:33 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9ImFEK3dFNGVVKzJUNkV3QUdhc3JTanBnT2VLbks2c0RxdWQ4bnNhaEIwZjg9IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9IkVrdDdvODJwMjd4OGJqWGJEa1h2TU1ZeUpBREhqdmIyZmpqQ1p3RWR3aTQ9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9MWRiNDdiYWE1MzRjYTNlODJmZTdjMzUwNTJkMWY2ZWEsdXNlcm5hbWU9c3RhdGlvbjE=</response>
+Thu Jun 18 22:01:33 2020 DEBUG Debug: received password request :  "station1@lianup"   "":0
+Thu Jun 18 22:01:33 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='station1@lianup'":0
+Thu Jun 18 22:01:33 2020 DEBUG Debug: is valid true:0
+Thu Jun 18 22:01:33 2020 DEBUG Debug: passcode is :  "1234":0
+Thu Jun 18 22:01:33 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD0yNzRhMmU0OGZhNGNkMTk1Yjc2YzYzMzZjMmJlYzg4ZA==</challenge>
+Thu Jun 18 22:01:33 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 18 22:01:33 2020 INFO Authentication succeeded for 'station1@lianup' from ::1 59061
+Thu Jun 18 22:01:33 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Thu Jun 18 22:01:33 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Thu Jun 18 22:01:33 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="F1L8QRbBbCTntto77KxuzicW2tChOSku" from="lianup" version="1.0" xml:lang="en">
+Thu Jun 18 22:01:33 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Thu Jun 18 22:01:33 2020 RECEIVED <iq id="qxmpp3" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Thu Jun 18 22:01:33 2020 SENT <iq id="qxmpp3" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>station1@lianup/LianUp</jid></bind></iq>
+Thu Jun 18 22:01:33 2020 RECEIVED <iq id="qxmpp5" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Thu Jun 18 22:01:33 2020 SENT <iq id="qxmpp5" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:01:33 2020 RECEIVED <iq id="qxmpp7" to="station1@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp8" type="get"><time xmlns="urn:xmpp:time"/></iq><iq id="qxmpp9" from="station1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Thu Jun 18 22:01:33 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 22:01:33 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 22:01:33 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='station1@lianup'":0
+Thu Jun 18 22:01:33 2020 SENT <iq id="qxmpp7" to="station1@lianup/LianUp" from="station1@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>station1</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:01:33 2020 SENT <iq id="qxmpp8" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-06-19T02:01:33.385Z</utc></time></iq>
+Thu Jun 18 22:01:33 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 22:01:33 2020 SENT <iq id="qxmpp9" to="station1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Thu Jun 18 22:01:33 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Thu Jun 18 22:01:33 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Thu Jun 18 22:01:34 2020 RECEIVED <iq id="qxmpp16" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:01:34 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 22:01:34 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 22:01:34 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Thu Jun 18 22:01:34 2020 SENT <iq id="qxmpp16" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:01:35 2020 RECEIVED <iq id="qxmpp22" to="juny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp23" to="leowang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp24" to="liang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp25" to="lindenglan@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juny@lianup'":0
+Thu Jun 18 22:01:35 2020 SENT <iq id="qxmpp22" to="station1@lianup/LianUp" from="juny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>junny</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='leowang@lianup'":0
+Thu Jun 18 22:01:35 2020 SENT <iq id="qxmpp23" to="station1@lianup/LianUp" from="leowang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>leo</GIVEN><FAMILY>wang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='liang@lianup'":0
+Thu Jun 18 22:01:35 2020 SENT <iq id="qxmpp24" to="station1@lianup/LianUp" from="liang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>liang</GIVEN><FAMILY>jiang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 22:01:35 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='lindenglan@lianup'":0
+Thu Jun 18 22:01:35 2020 SENT <iq id="qxmpp25" to="station1@lianup/LianUp" from="lindenglan@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>lindeng</GIVEN><FAMILY>lan</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Thu Jun 18 22:01:38 2020 RECEIVED <iq id="qxmpp38" type="get"><query xmlns="urn:xmpp:lutasklogsearch" sql="SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup'" start="2020-06-18 05:00:00" end="2020-06-19 05:00:00"/></iq>
+Thu Jun 18 22:01:38 2020 DEBUG Debug: "SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup' AND start BETWEEN STR_TO_DATE('2020-06-18 05:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-06-19 05:00:00', '%Y-%m-%d %H:%i:%s')":0
+Thu Jun 18 22:01:38 2020 SENT <iq id="qxmpp38" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:lutasklogsearch" sql="" start="" end=""/></iq>
+Thu Jun 18 22:02:33 2020 RECEIVED <iq id="qxmpp40" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:02:33 2020 SENT <iq id="qxmpp40" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:03:33 2020 RECEIVED <iq id="qxmpp42" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:03:33 2020 SENT <iq id="qxmpp42" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:04:33 2020 RECEIVED <iq id="qxmpp45" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:04:33 2020 SENT <iq id="qxmpp45" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:04:45 2020 RECEIVED <iq id="qxmpp47" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lustoreinfo" store="crab_du_jour@lianup" version="-1"><item name="online" value="{&quot;url&quot;:&quot;http://localhost:7777/&quot;,&quot;api_key&quot;:&quot;776d9960-93b0-11ea-a5be-f1d318b2bddd&quot;,&quot;refresh_interval&quot;:5,&quot;auto_accept&quot;:3,&quot;auto_station&quot;:&quot;&quot;,&quot;pay_by_cc&quot;:false,&quot;pay_cc_only&quot;:false,&quot;pickup&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:true},&quot;delivery&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:false},&quot;dinein&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:true},&quot;simple_print&quot;:true,&quot;gateway&quot;:{&quot;mode&quot;:&quot;PRIVATE&quot;,&quot;merchant_api_key&quot;:&quot;&quot;,&quot;type&quot;:&quot;REST&quot;}}" store="crab_du_jour@lianup"/></query></iq>
+Thu Jun 18 22:04:45 2020 SENT <iq id="qxmpp1863" to="station1@lianup" type="result"><query xmlns="urn:xmpp:luversion" store="crab_du_jour@lianup" version="6656"><item table_name="crab_du_jour@lianup/storeinfo_tb" bjid="crab_du_jour@lianup" status="ACTIVE" version="531"/></query></iq>
+Thu Jun 18 22:04:45 2020 SENT <iq id="qxmpp47" to="station1@lianup" type="result"><query xmlns="urn:xmpp:lustoreinfo" store="crab_du_jour@lianup" version="531"><item name="online" value="{&quot;url&quot;:&quot;http://localhost:7777/&quot;,&quot;api_key&quot;:&quot;776d9960-93b0-11ea-a5be-f1d318b2bddd&quot;,&quot;refresh_interval&quot;:5,&quot;auto_accept&quot;:3,&quot;auto_station&quot;:&quot;&quot;,&quot;pay_by_cc&quot;:false,&quot;pay_cc_only&quot;:false,&quot;pickup&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:true},&quot;delivery&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:false},&quot;dinein&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:true},&quot;simple_print&quot;:true,&quot;gateway&quot;:{&quot;mode&quot;:&quot;PRIVATE&quot;,&quot;merchant_api_key&quot;:&quot;&quot;,&quot;type&quot;:&quot;REST&quot;}}" store="crab_du_jour@lianup"/></query></iq>
+Thu Jun 18 22:04:45 2020 SENT <iq id="qxmpp1864" to="station1@lianup" type="result"><query xmlns="urn:xmpp:luversion" store="crab_du_jour@lianup" version="6657"><item table_name="store_info_tb" bjid="crab_du_jour@lianup" status="ACTIVE" version="531"/></query></iq>
+Thu Jun 18 22:04:47 2020 RECEIVED <iq id="qxmpp51" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lustoreinfo" store="crab_du_jour@lianup" version="-1"><item name="online" value="{&quot;url&quot;:&quot;http://localhost:7777/&quot;,&quot;api_key&quot;:&quot;776d9960-93b0-11ea-a5be-f1d318b2bddd&quot;,&quot;refresh_interval&quot;:5,&quot;auto_accept&quot;:3,&quot;auto_station&quot;:&quot;&quot;,&quot;pay_by_cc&quot;:false,&quot;pay_cc_only&quot;:false,&quot;pickup&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:true},&quot;delivery&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:false},&quot;dinein&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:true},&quot;simple_print&quot;:true,&quot;gateway&quot;:{&quot;mode&quot;:&quot;GLOBAL&quot;,&quot;merchant_api_key&quot;:&quot;&quot;,&quot;type&quot;:&quot;REST&quot;}}" store="crab_du_jour@lianup"/></query></iq>
+Thu Jun 18 22:04:47 2020 SENT <iq id="qxmpp1867" to="station1@lianup" type="result"><query xmlns="urn:xmpp:luversion" store="crab_du_jour@lianup" version="6658"><item table_name="crab_du_jour@lianup/storeinfo_tb" bjid="crab_du_jour@lianup" status="ACTIVE" version="532"/></query></iq>
+Thu Jun 18 22:04:47 2020 SENT <iq id="qxmpp51" to="station1@lianup" type="result"><query xmlns="urn:xmpp:lustoreinfo" store="crab_du_jour@lianup" version="532"><item name="online" value="{&quot;url&quot;:&quot;http://localhost:7777/&quot;,&quot;api_key&quot;:&quot;776d9960-93b0-11ea-a5be-f1d318b2bddd&quot;,&quot;refresh_interval&quot;:5,&quot;auto_accept&quot;:3,&quot;auto_station&quot;:&quot;&quot;,&quot;pay_by_cc&quot;:false,&quot;pay_cc_only&quot;:false,&quot;pickup&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:true},&quot;delivery&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:false},&quot;dinein&quot;:{&quot;1&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;2&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;3&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;4&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;5&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;6&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;7&quot;:{&quot;start&quot;:11,&quot;end&quot;:22},&quot;enable&quot;:true},&quot;simple_print&quot;:true,&quot;gateway&quot;:{&quot;mode&quot;:&quot;GLOBAL&quot;,&quot;merchant_api_key&quot;:&quot;&quot;,&quot;type&quot;:&quot;REST&quot;}}" store="crab_du_jour@lianup"/></query></iq>
+Thu Jun 18 22:04:47 2020 SENT <iq id="qxmpp1868" to="station1@lianup" type="result"><query xmlns="urn:xmpp:luversion" store="crab_du_jour@lianup" version="6659"><item table_name="store_info_tb" bjid="crab_du_jour@lianup" status="ACTIVE" version="532"/></query></iq>
+Thu Jun 18 22:05:33 2020 RECEIVED <iq id="qxmpp55" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:05:33 2020 SENT <iq id="qxmpp55" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:06:33 2020 RECEIVED <iq id="qxmpp57" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:06:33 2020 SENT <iq id="qxmpp57" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:07:33 2020 RECEIVED <iq id="qxmpp59" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:07:33 2020 SENT <iq id="qxmpp59" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:08:33 2020 RECEIVED <iq id="qxmpp61" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:08:33 2020 SENT <iq id="qxmpp61" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:09:33 2020 RECEIVED <iq id="qxmpp63" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:09:33 2020 SENT <iq id="qxmpp63" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:10:33 2020 RECEIVED <iq id="qxmpp65" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:10:33 2020 SENT <iq id="qxmpp65" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:11:33 2020 RECEIVED <iq id="qxmpp67" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:11:33 2020 SENT <iq id="qxmpp67" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:12:33 2020 RECEIVED <iq id="qxmpp69" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:12:33 2020 SENT <iq id="qxmpp69" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:13:33 2020 RECEIVED <iq id="qxmpp71" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:13:33 2020 SENT <iq id="qxmpp71" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:14:33 2020 RECEIVED <iq id="qxmpp73" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:14:33 2020 SENT <iq id="qxmpp73" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:14:58 2020 DEBUG Debug: settle work is working ...:0
+Thu Jun 18 22:15:33 2020 RECEIVED <iq id="qxmpp75" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:15:33 2020 SENT <iq id="qxmpp75" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:16:33 2020 RECEIVED <iq id="qxmpp77" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:16:33 2020 SENT <iq id="qxmpp77" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:17:33 2020 RECEIVED <iq id="qxmpp79" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:17:33 2020 SENT <iq id="qxmpp79" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:18:33 2020 RECEIVED <iq id="qxmpp81" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:18:33 2020 SENT <iq id="qxmpp81" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:19:33 2020 RECEIVED <iq id="qxmpp83" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:19:33 2020 SENT <iq id="qxmpp83" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:20:33 2020 RECEIVED <iq id="qxmpp85" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:20:33 2020 SENT <iq id="qxmpp85" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:21:33 2020 RECEIVED <iq id="qxmpp87" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:21:33 2020 SENT <iq id="qxmpp87" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:22:33 2020 RECEIVED <iq id="qxmpp89" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:22:33 2020 SENT <iq id="qxmpp89" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:23:33 2020 RECEIVED <iq id="qxmpp91" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:23:33 2020 SENT <iq id="qxmpp91" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:24:33 2020 RECEIVED <iq id="qxmpp93" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:24:33 2020 SENT <iq id="qxmpp93" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:25:33 2020 RECEIVED <iq id="qxmpp95" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:25:33 2020 SENT <iq id="qxmpp95" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:26:33 2020 RECEIVED <iq id="qxmpp97" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:26:33 2020 SENT <iq id="qxmpp97" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:27:33 2020 RECEIVED <iq id="qxmpp99" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Jun 18 22:27:33 2020 SENT <iq id="qxmpp99" to="station1@lianup/LianUp" type="result"/>
+Thu Jun 18 22:28:28 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_06_18_22_28_28_856.txt":0

@@ -1,0 +1,339 @@
+Sat May 2 10:27:20 2020 DEBUG Debug: settle work is working ...:0
+Sat May 2 10:42:20 2020 DEBUG Debug: settle work is working ...:0
+Sat May 2 10:57:20 2020 DEBUG Debug: settle work is working ...:0
+Sat May 2 11:12:20 2020 DEBUG Debug: settle work is working ...:0
+Sat May 2 11:15:58 2020 INFO Incoming client connection from ::1 62891
+Sat May 2 11:15:58 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 2 11:15:58 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="i2UB3HNVQTF8jTIWQ0lpWIRxiWK7xDXh" from="lianup" version="1.0" xml:lang="en">
+Sat May 2 11:15:58 2020 SENT <stream:features><mechanisms xmlns="urn:ietf:params:xml:ns:xmpp-sasl"><mechanism>PLAIN</mechanism><mechanism>DIGEST-MD5</mechanism></mechanisms></stream:features>
+Sat May 2 11:15:58 2020 RECEIVED <auth xmlns="urn:ietf:params:xml:ns:xmpp-sasl" mechanism="DIGEST-MD5"/>
+Sat May 2 11:15:58 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">YWxnb3JpdGhtPW1kNS1zZXNzLGNoYXJzZXQ9dXRmLTgsbm9uY2U9ImFCby9iSzVGeXJFcEZCWURONnljNVVkaDVvbWtETUFGRnJ0SHk1aERQREk9Iixxb3A9YXV0aCxyZWFsbT1saWFudXA=</challenge>
+Sat May 2 11:15:58 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl">Y2hhcnNldD11dGYtOCxjbm9uY2U9IlJZeVNSRnFheTVRbkkrTnhQbHdoNld1WXlRV1ZhczFIcUhXYzk0MGdBUlE9IixkaWdlc3QtdXJpPSJ4bXBwL2xpYW51cCIsbmM9MDAwMDAwMDEsbm9uY2U9ImFCby9iSzVGeXJFcEZCWURONnljNVVkaDVvbWtETUFGRnJ0SHk1aERQREk9Iixxb3A9YXV0aCxyZWFsbT1saWFudXAscmVzcG9uc2U9OTZiYWZmY2IwYzk1NDM1NzhmNjgyNGVhYWM0ZTVlMDcsdXNlcm5hbWU9c3RhdGlvbjE=</response>
+Sat May 2 11:15:58 2020 DEBUG Debug: received password request :  "station1@lianup"   "":0
+Sat May 2 11:15:58 2020 DEBUG Debug: "SELECT id, AES_DECRYPT(password, 'my_secret_key_to_encrypt') AS password FROM user_tb WHERE gid='station1@lianup'":0
+Sat May 2 11:15:58 2020 DEBUG Debug: is valid true:0
+Sat May 2 11:15:58 2020 DEBUG Debug: passcode is :  "1234":0
+Sat May 2 11:15:58 2020 SENT <challenge xmlns="urn:ietf:params:xml:ns:xmpp-sasl">cnNwYXV0aD0wMjlmMWY2NmUzYWJjOTA2NDY0ZjI3Mjg4ZjM5ZmZmNg==</challenge>
+Sat May 2 11:15:58 2020 RECEIVED <response xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 2 11:15:58 2020 INFO Authentication succeeded for 'station1@lianup' from ::1 62891
+Sat May 2 11:15:58 2020 SENT <success xmlns="urn:ietf:params:xml:ns:xmpp-sasl"/>
+Sat May 2 11:15:58 2020 RECEIVED <?xml version='1.0'?><stream:stream to='lianup' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' version='1.0'>
+Sat May 2 11:15:58 2020 SENT <?xml version='1.0'?><stream:stream xmlns="jabber:client" xmlns:stream="http://etherx.jabber.org/streams" id="EOzwwRC6XFJPuNU0eGfbYKAusck8ZZPi" from="lianup" version="1.0" xml:lang="en">
+Sat May 2 11:15:58 2020 SENT <stream:features><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><required/></bind><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></stream:features>
+Sat May 2 11:15:58 2020 RECEIVED <iq id="qxmpp3" type="set"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><resource>LianUp</resource></bind></iq>
+Sat May 2 11:15:58 2020 SENT <iq id="qxmpp3" type="result"><bind xmlns="urn:ietf:params:xml:ns:xmpp-bind"><jid>station1@lianup/LianUp</jid></bind></iq>
+Sat May 2 11:15:58 2020 RECEIVED <iq id="qxmpp5" to="lianup" type="set"><session xmlns="urn:ietf:params:xml:ns:xmpp-session"/></iq>
+Sat May 2 11:15:58 2020 SENT <iq id="qxmpp5" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:15:58 2020 RECEIVED <iq id="qxmpp7" to="station1@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp8" type="get"><time xmlns="urn:xmpp:time"/></iq><iq id="qxmpp9" from="station1@lianup/LianUp" type="get"><query xmlns="jabber:iq:roster"/></iq><presence><c xmlns="http://jabber.org/protocol/caps" hash="sha-1" node="https://github.com/qxmpp-project/qxmpp" ver="nr5ovUwv320EEID3nVVXiAqSVoc="/></presence>
+Sat May 2 11:15:58 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='station1@lianup'":0
+Sat May 2 11:15:58 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='station1@lianup'":0
+Sat May 2 11:15:58 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='station1@lianup'":0
+Sat May 2 11:15:58 2020 SENT <iq id="qxmpp7" to="station1@lianup/LianUp" from="station1@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>station1</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:15:58 2020 SENT <iq id="qxmpp8" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-05-02T15:15:58.226Z</utc></time></iq>
+Sat May 2 11:15:58 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 2 11:15:58 2020 SENT <iq id="qxmpp9" to="station1@lianup/LianUp" type="result"><query xmlns="jabber:iq:roster"/></iq>
+Sat May 2 11:15:58 2020 DEBUG Debug: "SELECT gid_friend FROM roaster_tb WHERE gid_self='station1@lianup'":0
+Sat May 2 11:15:58 2020 DEBUG Debug: "SELECT * FROM presence_tb WHERE gid_to='station1@lianup'":0
+Sat May 2 11:16:01 2020 RECEIVED <iq id="qxmpp16" to="crab_du_jour@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:01 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 2 11:16:01 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 2 11:16:01 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='crab_du_jour@lianup'":0
+Sat May 2 11:16:01 2020 SENT <iq id="qxmpp16" to="station1@lianup/LianUp" from="crab_du_jour@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><LOCALITY>Charlotte</LOCALITY><PCODE>28213</PCODE><REGION>NC</REGION><STREET>1015 Chancellor Park Dr</STREET></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>crab du jour</GIVEN><FAMILY>Chen</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER>980.960.9996</NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>980.960.9996</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:03 2020 RECEIVED <iq id="qxmpp22" to="juny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp23" to="leowang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp24" to="liang@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp25" to="lindenglan@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juny@lianup'":0
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juny@lianup'":0
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juny@lianup'":0
+Sat May 2 11:16:03 2020 SENT <iq id="qxmpp22" to="station1@lianup/LianUp" from="juny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>junny</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='leowang@lianup'":0
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='leowang@lianup'":0
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='leowang@lianup'":0
+Sat May 2 11:16:03 2020 SENT <iq id="qxmpp23" to="station1@lianup/LianUp" from="leowang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>leo</GIVEN><FAMILY>wang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='liang@lianup'":0
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='liang@lianup'":0
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='liang@lianup'":0
+Sat May 2 11:16:03 2020 SENT <iq id="qxmpp24" to="station1@lianup/LianUp" from="liang@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>liang</GIVEN><FAMILY>jiang</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='lindenglan@lianup'":0
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='lindenglan@lianup'":0
+Sat May 2 11:16:03 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='lindenglan@lianup'":0
+Sat May 2 11:16:03 2020 SENT <iq id="qxmpp25" to="station1@lianup/LianUp" from="lindenglan@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>lindeng</GIVEN><FAMILY>lan</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:05 2020 RECEIVED <iq id="qxmpp38" type="get"><query xmlns="urn:xmpp:lutasklogsearch" sql="SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup'" start="2020-05-02 05:00:00" end="2020-05-03 05:00:00"/></iq>
+Sat May 2 11:16:05 2020 DEBUG Debug: "SELECT id FROM task_log_tb WHERE  store='crab_du_jour@lianup' AND start BETWEEN STR_TO_DATE('2020-05-02 05:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-03 05:00:00', '%Y-%m-%d %H:%i:%s')":0
+Sat May 2 11:16:05 2020 SENT <iq id="qxmpp38" to="station1@lianup/LianUp" type="result"><query xmlns="urn:xmpp:lutasklogsearch" sql="" start="" end=""/></iq>
+Sat May 2 11:16:40 2020 RECEIVED <iq id="qxmpp41" to="ahzahriewilliams@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp42" to="alexisthompson@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp43" to="angelaguilar@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp44" to="ashleyrowe@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp45" to="cierra@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp46" to="clairecook@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp47" to="destiny@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp48" to="destinynelson@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp49" to="drew@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp50" to="elishagabriel@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp51" to="irianareid@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp52" to="jaelynwilson@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp53" to="jasminecarter@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp54" to="jayleesmarr@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp55" to="kennedy@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp56" to="miljanaveloz@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp57" to="natashaowens@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp58" to="sheriedeveronica@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='ahzahriewilliams@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='ahzahriewilliams@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='ahzahriewilliams@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp41" to="station1@lianup/LianUp" from="ahzahriewilliams@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Ahzahrie</GIVEN><FAMILY>Williams</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>7048701077</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='alexisthompson@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='alexisthompson@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='alexisthompson@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp42" to="station1@lianup/LianUp" from="alexisthompson@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>alexisthompson</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='angelaguilar@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='angelaguilar@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='angelaguilar@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp43" to="station1@lianup/LianUp" from="angelaguilar@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>angelaguilar</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='ashleyrowe@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='ashleyrowe@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='ashleyrowe@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp44" to="station1@lianup/LianUp" from="ashleyrowe@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>ashleyrowe</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='cierra@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='cierra@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='cierra@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp45" to="station1@lianup/LianUp" from="cierra@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Cierra</GIVEN><FAMILY>Elliott</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='clairecook@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='clairecook@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='clairecook@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp46" to="station1@lianup/LianUp" from="clairecook@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>clairecook</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='destiny@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='destiny@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='destiny@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp47" to="station1@lianup/LianUp" from="destiny@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Destiny</GIVEN><FAMILY>Malave</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='destinynelson@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='destinynelson@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='destinynelson@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp48" to="station1@lianup/LianUp" from="destinynelson@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Destiny</GIVEN><FAMILY>Nelson</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='drew@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='drew@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='drew@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp49" to="station1@lianup/LianUp" from="drew@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Drew</GIVEN><FAMILY>Wildman</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='elishagabriel@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='elishagabriel@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='elishagabriel@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp50" to="station1@lianup/LianUp" from="elishagabriel@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>elishagabriel</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='irianareid@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='irianareid@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='irianareid@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp51" to="station1@lianup/LianUp" from="irianareid@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>iriana</GIVEN><FAMILY>reid</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='jaelynwilson@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='jaelynwilson@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='jaelynwilson@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp52" to="station1@lianup/LianUp" from="jaelynwilson@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>JAELYN</GIVEN><FAMILY>WILSON</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='jasminecarter@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='jasminecarter@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='jasminecarter@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp53" to="station1@lianup/LianUp" from="jasminecarter@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>jasminecarter</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='jayleesmarr@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='jayleesmarr@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='jayleesmarr@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp54" to="station1@lianup/LianUp" from="jayleesmarr@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>jayleesmarr</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='kennedy@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='kennedy@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='kennedy@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp55" to="station1@lianup/LianUp" from="kennedy@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>kennedy</GIVEN><FAMILY>evans</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='miljanaveloz@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='miljanaveloz@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='miljanaveloz@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp56" to="station1@lianup/LianUp" from="miljanaveloz@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>miljana</GIVEN><FAMILY>veloz</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='natashaowens@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='natashaowens@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='natashaowens@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp57" to="station1@lianup/LianUp" from="natashaowens@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>natashaowens</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='sheriedeveronica@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='sheriedeveronica@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='sheriedeveronica@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp58" to="station1@lianup/LianUp" from="sheriedeveronica@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>SHERIE</GIVEN><FAMILY>DEVERONICA</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 RECEIVED <iq id="qxmpp96" to="johnbaxter@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='johnbaxter@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='johnbaxter@lianup'":0
+Sat May 2 11:16:40 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='johnbaxter@lianup'":0
+Sat May 2 11:16:40 2020 SENT <iq id="qxmpp96" to="station1@lianup/LianUp" from="johnbaxter@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>John</GIVEN><FAMILY>Baxter</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 RECEIVED <iq id="qxmpp100" to="alisabeth@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp101" to="alleyagarcia@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp102" to="asiaford@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp103" to="biancagearring@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp104" to="celeste@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp105" to="chrisedwards@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp106" to="christiansoler@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp107" to="christinamacdonald@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp108" to="christopherarnold@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp109" to="daizie@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp110" to="damarismontes@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp111" to="destinysturdivants@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp112" to="dwighthinton@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp113" to="dyqureusbowe@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp114" to="gwenlowery@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp115" to="harleygraham@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp116" to="jihanonallah@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp117" to="juansurginer@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp118" to="justinstevenson@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp119" to="kelseyfuqua@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp120" to="laneylanderos@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp121" to="laneylanderus@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp122" to="laurenleak@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp123" to="londonpurser@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp124" to="megandavis@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp125" to="michaeldesmarattes@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp126" to="nicole@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp127" to="oliviachristensen@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp128" to="parrisbryant6779@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp129" to="princesscammue@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp130" to="samantacastro@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp131" to="savannah@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp132" to="schnelljohnson@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp133" to="shelbymisenheimer@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp134" to="sidney@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp135" to="staphaniecrane@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp136" to="stephaniehughes@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp137" to="tieraseegars@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp138" to="tiffanyjames@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp139" to="tiffanylecky@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp140" to="tirrellcrum@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp141" to="toyaramey@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp142" to="treynellis@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq><iq id="qxmpp143" to="virginiaperkins@lianup" type="get"><vCard xmlns="vcard-temp"><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='alisabeth@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='alisabeth@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='alisabeth@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp100" to="station1@lianup/LianUp" from="alisabeth@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Alisabeth</GIVEN><FAMILY>Austin</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='alleyagarcia@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='alleyagarcia@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='alleyagarcia@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp101" to="station1@lianup/LianUp" from="alleyagarcia@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>alleyagarcia</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='asiaford@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='asiaford@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='asiaford@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp102" to="station1@lianup/LianUp" from="asiaford@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>asiaford</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='biancagearring@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='biancagearring@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='biancagearring@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp103" to="station1@lianup/LianUp" from="biancagearring@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>biancagearring</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='celeste@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='celeste@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='celeste@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp104" to="station1@lianup/LianUp" from="celeste@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Margaret</GIVEN><FAMILY>Tolver</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='chrisedwards@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='chrisedwards@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='chrisedwards@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp105" to="station1@lianup/LianUp" from="chrisedwards@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>chrisedwards</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='christiansoler@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='christiansoler@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='christiansoler@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp106" to="station1@lianup/LianUp" from="christiansoler@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>christiansoler</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='christinamacdonald@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='christinamacdonald@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='christinamacdonald@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp107" to="station1@lianup/LianUp" from="christinamacdonald@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>christinamacdonald</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='christopherarnold@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='christopherarnold@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='christopherarnold@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp108" to="station1@lianup/LianUp" from="christopherarnold@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>christopherarnold</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='daizie@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='daizie@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='daizie@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp109" to="station1@lianup/LianUp" from="daizie@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Daizie</GIVEN><FAMILY>Fratello</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='damarismontes@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='damarismontes@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='damarismontes@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp110" to="station1@lianup/LianUp" from="damarismontes@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>damarismontes</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='destinysturdivants@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='destinysturdivants@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='destinysturdivants@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp111" to="station1@lianup/LianUp" from="destinysturdivants@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>destinysturdivants</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='dwighthinton@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='dwighthinton@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='dwighthinton@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp112" to="station1@lianup/LianUp" from="dwighthinton@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>dwighthinton</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='dyqureusbowe@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='dyqureusbowe@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='dyqureusbowe@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp113" to="station1@lianup/LianUp" from="dyqureusbowe@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>dyqureusbowe</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='gwenlowery@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='gwenlowery@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='gwenlowery@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp114" to="station1@lianup/LianUp" from="gwenlowery@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>gwenlowery</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='harleygraham@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='harleygraham@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='harleygraham@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp115" to="station1@lianup/LianUp" from="harleygraham@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>harleygraham</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='jihanonallah@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='jihanonallah@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='jihanonallah@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp116" to="station1@lianup/LianUp" from="jihanonallah@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>jihanonallah</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='juansurginer@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='juansurginer@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='juansurginer@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp117" to="station1@lianup/LianUp" from="juansurginer@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>juansurginer</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='justinstevenson@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='justinstevenson@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='justinstevenson@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp118" to="station1@lianup/LianUp" from="justinstevenson@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>justinstevenson</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='kelseyfuqua@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='kelseyfuqua@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='kelseyfuqua@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp119" to="station1@lianup/LianUp" from="kelseyfuqua@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>kelseyfuqua</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='laneylanderos@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='laneylanderos@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='laneylanderos@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp120" to="station1@lianup/LianUp" from="laneylanderos@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/><STREET>1230REBE</STREET></ADR><EMAIL><INTERNET/><USERID>LANEY.LANDEROS@GMAIL.COM</USERID></EMAIL><N><GIVEN>LANEY</GIVEN><FAMILY>LANDEROS</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER>8287779718</NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='laneylanderus@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='laneylanderus@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='laneylanderus@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp121" to="station1@lianup/LianUp" from="laneylanderus@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>laneylanderus</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='laurenleak@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='laurenleak@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='laurenleak@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp122" to="station1@lianup/LianUp" from="laurenleak@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>laurenleak</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='londonpurser@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='londonpurser@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='londonpurser@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp123" to="station1@lianup/LianUp" from="londonpurser@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>londonpurser</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='megandavis@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='megandavis@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='megandavis@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp124" to="station1@lianup/LianUp" from="megandavis@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>megandavis</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='michaeldesmarattes@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='michaeldesmarattes@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='michaeldesmarattes@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp125" to="station1@lianup/LianUp" from="michaeldesmarattes@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Michael</GIVEN><FAMILY>Desmarattes</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='nicole@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='nicole@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='nicole@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp126" to="station1@lianup/LianUp" from="nicole@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Nicole</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='oliviachristensen@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='oliviachristensen@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='oliviachristensen@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp127" to="station1@lianup/LianUp" from="oliviachristensen@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>oliviachristensen</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='parrisbryant6779@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='parrisbryant6779@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='parrisbryant6779@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp128" to="station1@lianup/LianUp" from="parrisbryant6779@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Parris</GIVEN><FAMILY>Bryant</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='princesscammue@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='princesscammue@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='princesscammue@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp129" to="station1@lianup/LianUp" from="princesscammue@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>princesscammue</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='samantacastro@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='samantacastro@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='samantacastro@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp130" to="station1@lianup/LianUp" from="samantacastro@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>samantacastro</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='savannah@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='savannah@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='savannah@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp131" to="station1@lianup/LianUp" from="savannah@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Savannah</GIVEN><FAMILY>Moore</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='schnelljohnson@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='schnelljohnson@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='schnelljohnson@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp132" to="station1@lianup/LianUp" from="schnelljohnson@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>schnelljohnson</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='shelbymisenheimer@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='shelbymisenheimer@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='shelbymisenheimer@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp133" to="station1@lianup/LianUp" from="shelbymisenheimer@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>shelbymisenheimer</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='sidney@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='sidney@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='sidney@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp134" to="station1@lianup/LianUp" from="sidney@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Sidney</GIVEN><FAMILY>Kraft</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='staphaniecrane@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='staphaniecrane@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='staphaniecrane@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp135" to="station1@lianup/LianUp" from="staphaniecrane@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>stephaniecrane</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='stephaniehughes@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='stephaniehughes@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='stephaniehughes@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp136" to="station1@lianup/LianUp" from="stephaniehughes@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>stephanie</GIVEN><FAMILY>hughes</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='tieraseegars@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='tieraseegars@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='tieraseegars@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp137" to="station1@lianup/LianUp" from="tieraseegars@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>tieraseegars</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='tiffanyjames@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='tiffanyjames@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='tiffanyjames@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp138" to="station1@lianup/LianUp" from="tiffanyjames@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>tiffanyjames</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='tiffanylecky@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='tiffanylecky@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='tiffanylecky@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp139" to="station1@lianup/LianUp" from="tiffanylecky@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>Tiffany</GIVEN><FAMILY>Lecky</FAMILY></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='tirrellcrum@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='tirrellcrum@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='tirrellcrum@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp140" to="station1@lianup/LianUp" from="tirrellcrum@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>tirrellcrum</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='toyaramey@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='toyaramey@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='toyaramey@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp141" to="station1@lianup/LianUp" from="toyaramey@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>toyaramey</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='treynellis@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='treynellis@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='treynellis@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp142" to="station1@lianup/LianUp" from="treynellis@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>treynellis</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_tb WHERE jid='virginiaperkins@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_phone_tb WHERE jid='virginiaperkins@lianup'":0
+Sat May 2 11:16:41 2020 DEBUG Debug: "SELECT * FROM vcard_address_tb WHERE jid='virginiaperkins@lianup'":0
+Sat May 2 11:16:41 2020 SENT <iq id="qxmpp143" to="station1@lianup/LianUp" from="virginiaperkins@lianup" type="result"><vCard xmlns="vcard-temp"><ADR><HOME/></ADR><EMAIL><INTERNET/><USERID></USERID></EMAIL><N><GIVEN>virginiaperkins</GIVEN></N><PHONE><HOME/><NUMBER></NUMBER></PHONE><PHONE><WORK/><NUMBER></NUMBER></PHONE><PHONE><FAX/><NUMBER></NUMBER></PHONE><PHONE><CELL/><NUMBER></NUMBER></PHONE><TITLE/><ROLE/></vCard></iq>
+Sat May 2 11:16:58 2020 RECEIVED <iq id="qxmpp243" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 2 11:16:58 2020 SENT <iq id="qxmpp243" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:17:18 2020 RECEIVED <iq id="qxmpp245" from="station1@lianup" type="set"><query xmlns="urn:xmpp:lustoreinfo" store="crab_du_jour@lianup" version="-1"><item name="cashier_cash" value="{&quot;ahzahriewilliams@lianup&quot;:5.68,&quot;ashleyrowe@lianup&quot;:5.84,&quot;cierra@lianup&quot;:0.44,&quot;irianareid@lianup&quot;:448.65,&quot;jasminecarter@lianup&quot;:8.56,&quot;juny@lianup&quot;:5.8,&quot;alexisthompson@lianup&quot;:0}" store="crab_du_jour@lianup"/></query></iq>
+Sat May 2 11:17:18 2020 SENT <iq id="qxmpp2922" to="station1@lianup" type="result"><query xmlns="urn:xmpp:luversion" store="crab_du_jour@lianup" version="6328"><item table_name="crab_du_jour@lianup/storeinfo_tb" bjid="crab_du_jour@lianup" status="ACTIVE" version="399"/></query></iq>
+Sat May 2 11:17:18 2020 SENT <iq id="qxmpp245" to="station1@lianup" type="result"><query xmlns="urn:xmpp:lustoreinfo" store="crab_du_jour@lianup" version="399"><item name="cashier_cash" value="{&quot;ahzahriewilliams@lianup&quot;:5.68,&quot;ashleyrowe@lianup&quot;:5.84,&quot;cierra@lianup&quot;:0.44,&quot;irianareid@lianup&quot;:448.65,&quot;jasminecarter@lianup&quot;:8.56,&quot;juny@lianup&quot;:5.8,&quot;alexisthompson@lianup&quot;:0}" store="crab_du_jour@lianup"/></query></iq>
+Sat May 2 11:17:18 2020 SENT <iq id="qxmpp2923" to="station1@lianup" type="result"><query xmlns="urn:xmpp:luversion" store="crab_du_jour@lianup" version="6329"><item table_name="store_info_tb" bjid="crab_du_jour@lianup" status="ACTIVE" version="399"/></query></iq>
+Sat May 2 11:17:58 2020 RECEIVED <iq id="qxmpp249" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 2 11:17:58 2020 SENT <iq id="qxmpp249" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:18:58 2020 RECEIVED <iq id="qxmpp251" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 2 11:18:58 2020 SENT <iq id="qxmpp251" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:19:58 2020 RECEIVED <iq id="qxmpp253" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 2 11:19:58 2020 SENT <iq id="qxmpp253" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:20:58 2020 RECEIVED <iq id="qxmpp255" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 2 11:20:58 2020 SENT <iq id="qxmpp255" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:21:58 2020 RECEIVED <iq id="qxmpp257" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 2 11:21:58 2020 SENT <iq id="qxmpp257" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:22:58 2020 RECEIVED <iq id="qxmpp259" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 2 11:22:58 2020 SENT <iq id="qxmpp259" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:23:58 2020 RECEIVED <iq id="qxmpp261" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 2 11:23:58 2020 SENT <iq id="qxmpp261" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:24:58 2020 RECEIVED <iq id="qxmpp263" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 2 11:24:58 2020 SENT <iq id="qxmpp263" to="station1@lianup/LianUp" type="result"/>
+Sat May 2 11:25:40 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_05_02_11_25_40_868.txt":0

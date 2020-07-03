@@ -1,0 +1,11 @@
+Thu Apr 30 11:26:05 2020 DEBUG Debug: settle work is working ...:0
+Thu Apr 30 11:26:20 2020 RECEIVED <iq id="qxmpp46" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Apr 30 11:26:20 2020 SENT <iq id="qxmpp46" to="station1@lianup/LianUp" type="result"/>
+Thu Apr 30 11:27:20 2020 RECEIVED <iq id="qxmpp48" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Thu Apr 30 11:27:20 2020 SENT <iq id="qxmpp48" to="station1@lianup/LianUp" type="result"/>
+Thu Apr 30 11:27:42 2020 WARNING Socket error: The remote host closed the connection
+Thu Apr 30 11:27:42 2020 INFO Socket disconnected for 'station1@lianup/LianUp' from ::1 60605
+Thu Apr 30 11:41:05 2020 DEBUG Debug: settle work is working ...:0
+Thu Apr 30 11:56:05 2020 DEBUG Debug: settle work is working ...:0
+Thu Apr 30 12:11:07 2020 DEBUG Debug: settle work is working ...:0
+Thu Apr 30 12:25:39 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_04_30_12_25_39_456.txt":0

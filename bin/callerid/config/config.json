@@ -1,0 +1,13 @@
+{
+    "certificate": "",
+    "credit_card_settle_interval": 900000,
+    "database_name": "luc_local_production",
+    "database_password": "292292",
+    "database_user": "root",
+    "enable_credit_card_settle": true,
+    "enable_out_of_band_server": false,
+    "enable_report_generation": true,
+    "key": "",
+    "port": 6666,
+    "server": "lianup"
+}

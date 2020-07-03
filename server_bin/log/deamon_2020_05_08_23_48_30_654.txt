@@ -1,0 +1,775 @@
+Fri May 8 23:48:50 2020 RECEIVED <iq id="qxmpp10537" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:48:50 2020 SENT <iq id="qxmpp10537" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:49:50 2020 RECEIVED <iq id="qxmpp10539" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:49:50 2020 SENT <iq id="qxmpp10539" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:50:23 2020 DEBUG Debug: settle work is working ...:0
+Fri May 8 23:50:50 2020 RECEIVED <iq id="qxmpp10541" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:50:50 2020 SENT <iq id="qxmpp10541" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:51:50 2020 RECEIVED <iq id="qxmpp10543" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:51:50 2020 SENT <iq id="qxmpp10543" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:52:50 2020 RECEIVED <iq id="qxmpp10545" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:52:50 2020 SENT <iq id="qxmpp10545" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:53:50 2020 RECEIVED <iq id="qxmpp10547" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:53:50 2020 SENT <iq id="qxmpp10547" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:54:50 2020 RECEIVED <iq id="qxmpp10549" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:54:50 2020 SENT <iq id="qxmpp10549" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:55:50 2020 RECEIVED <iq id="qxmpp10551" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:55:50 2020 SENT <iq id="qxmpp10551" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:56:50 2020 RECEIVED <iq id="qxmpp10553" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:56:50 2020 SENT <iq id="qxmpp10553" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:57:50 2020 RECEIVED <iq id="qxmpp10555" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:57:50 2020 SENT <iq id="qxmpp10555" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:58:50 2020 RECEIVED <iq id="qxmpp10557" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:58:50 2020 SENT <iq id="qxmpp10557" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:59:50 2020 RECEIVED <iq id="qxmpp10559" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Fri May 8 23:59:50 2020 SENT <iq id="qxmpp10559" to="station1@lianup/LianUp" type="result"/>
+Fri May 8 23:59:59 2020 DEBUG Debug: day end :  QDateTime(2020-05-08 23:59:59.000 Eastern Daylight Time Qt::LocalTime):0
+Fri May 8 23:59:59 2020 DEBUG Debug: use localhost ...:0
+Fri May 8 23:59:59 2020 DEBUG Debug: Database opened:  "n2_daily_report_gen_store_getter" @ "n2":0
+Fri May 8 23:59:59 2020 DEBUG Debug: stores:  ("test@lianup", "ipad6@lianup", "station1@lianup", "station4@lianup", "station5@lianup", "laptop1@lianup", "station3@lianup", "ipad5@lianup", "mobil1@lianup", "nikki@lianup", "station2@lianup", "ipad2@lianup", "ipad4@lianup", "ipad3@lianup", "crab_du_jour@lianup", "ipad1@lianup"):0
+Fri May 8 23:59:59 2020 DEBUG Debug: use localhost ...:0
+Fri May 8 23:59:59 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Fri May 8 23:59:59 2020 DEBUG Debug: gen datily order report ...:0
+Fri May 8 23:59:59 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='test@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Fri May 8 23:59:59 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Fri May 8 23:59:59 2020 DEBUG Debug: gen datily payment report ...:0
+Fri May 8 23:59:59 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='test@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Fri May 8 23:59:59 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Fri May 8 23:59:59 2020 DEBUG Debug: use localhost ...:0
+Fri May 8 23:59:59 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Fri May 8 23:59:59 2020 DEBUG Debug: gen datily order report ...:0
+Fri May 8 23:59:59 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='test@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Fri May 8 23:59:59 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Fri May 8 23:59:59 2020 DEBUG Debug: gen datily payment report ...:0
+Fri May 8 23:59:59 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='test@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:00 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:00 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:00 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:00 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:00 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='test@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:00 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:00 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:00 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='test@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:00 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:00 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:00 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:00 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:00 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='test@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:00 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:00 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:00 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:00 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:00 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:00 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='test@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:00 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:00 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:00 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:00 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:00 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad6@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:00 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:00 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:00 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad6@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:01 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:01 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:01 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:01 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:01 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad6@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:01 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:01 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:01 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad6@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:01 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:01 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:01 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:01 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:01 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad6@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:01 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:01 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:01 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad6@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:02 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:02 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:02 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:02 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:02 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad6@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:02 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:02 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:02 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad6@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:02 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:02 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:02 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:02 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:02 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:02 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:02 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:02 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:02 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:02 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:02 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:02 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:02 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:02 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:02 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:02 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:03 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:03 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:03 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:03 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:03 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:03 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:03 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:03 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:03 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:03 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:03 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:03 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:03 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:03 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:03 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:03 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:04 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:04 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:04 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:04 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:04 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:04 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:04 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:04 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:04 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:04 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:04 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:04 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:04 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:04 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:04 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:04 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:04 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:04 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:04 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:04 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:04 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:05 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:05 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:05 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:05 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:05 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:05 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:05 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:05 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:05 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:05 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:05 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:05 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:05 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:05 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:05 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:05 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:05 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:05 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:05 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:06 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:06 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:06 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:06 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:06 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:06 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:06 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:06 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:06 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:06 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:06 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:06 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:06 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:06 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:06 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:06 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:06 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:06 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:06 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:06 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:06 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:07 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:07 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:07 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:07 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:07 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:07 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:07 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:07 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='laptop1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:07 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:07 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:07 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='laptop1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:07 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:07 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:07 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:07 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:07 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='laptop1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:07 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:07 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:07 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='laptop1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:08 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:08 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:08 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:08 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:08 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='laptop1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:08 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:08 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:08 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='laptop1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:08 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:08 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:08 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:08 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:08 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='laptop1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:08 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:08 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:08 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='laptop1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:08 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:08 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:08 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:08 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:08 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:08 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:08 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:08 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:09 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:09 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:09 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:09 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:09 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:09 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:09 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:09 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:09 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:09 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:09 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:09 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:09 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:09 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:09 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:09 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:10 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:10 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:10 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:10 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:10 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:10 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:10 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:10 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:10 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:10 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:10 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:10 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:10 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:10 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:10 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:10 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:10 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:10 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:10 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:10 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:10 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:10 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:10 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:10 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:11 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:11 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:11 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:11 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:11 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:11 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:11 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:11 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:11 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:11 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:11 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:11 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:11 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:11 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:11 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:11 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad5@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:12 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:12 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:12 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:12 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:12 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='mobil1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:12 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:12 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:12 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='mobil1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:12 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:12 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:12 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:12 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:12 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='mobil1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:12 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:12 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:12 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='mobil1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:12 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:12 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:12 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:12 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:12 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='mobil1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:12 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:12 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:12 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='mobil1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:13 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:13 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:13 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:13 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:13 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='mobil1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:13 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:13 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:13 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='mobil1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:13 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:13 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:13 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:13 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:13 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='nikki@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:13 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:13 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:13 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='nikki@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:13 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:13 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:13 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:13 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:13 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='nikki@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:14 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:14 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:14 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='nikki@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:14 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:14 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:14 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:14 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:14 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='nikki@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:14 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:14 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:14 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='nikki@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:14 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:14 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:14 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:14 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:14 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='nikki@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:14 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:14 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:14 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='nikki@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:15 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:15 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:15 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:15 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:15 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:15 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:15 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:15 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:15 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:15 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:15 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:15 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:15 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:15 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:15 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:15 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:15 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:15 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:15 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:15 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:15 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:16 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:16 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:16 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:16 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:16 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:16 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:16 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:16 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='station2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:16 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:16 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:16 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='station2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:16 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:16 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:16 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:16 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:16 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:16 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:16 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:16 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:17 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:17 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:17 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:17 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:17 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:17 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:17 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:17 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:17 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:17 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:17 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:17 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:17 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:17 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:17 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:17 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:17 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:17 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:17 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:17 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:17 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:18 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:18 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:18 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad2@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:18 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:18 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:18 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:18 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:18 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:18 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:18 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:18 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:18 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:18 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:18 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:18 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:18 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:18 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:18 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:18 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:19 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:19 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:19 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:19 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:19 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:19 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:19 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:19 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:19 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:19 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:19 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:19 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:19 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:19 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:19 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:19 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad4@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:19 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:19 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:19 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:19 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:19 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:19 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:19 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:19 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:20 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:20 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:20 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:20 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:20 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:20 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:20 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:20 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:20 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:20 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:20 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:20 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:20 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:20 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:20 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:20 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:21 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:21 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:21 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:21 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:21 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:21 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:21 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:21 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad3@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:21 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:21 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:21 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:21 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:21 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='crab_du_jour@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:21 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:21 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:21 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='crab_du_jour@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:21 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:21 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:21 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:21 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:21 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='crab_du_jour@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:21 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:21 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:21 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='crab_du_jour@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:22 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:22 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:22 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:22 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:22 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='crab_du_jour@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:22 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:22 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:22 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='crab_du_jour@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:22 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:22 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:22 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:22 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:22 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='crab_du_jour@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "REOPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "INIT_SEQUENCE":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "OPEN":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: unknown order status detected:  "PLACEORDER":0
+Sat May 9 00:00:22 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:22 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:22 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='crab_du_jour@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:23 2020 DEBUG Debug: oops, mysterious payment actions ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: oops, mysterious payment actions ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: oops, mysterious payment actions ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: oops, mysterious payment actions ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: oops, mysterious payment actions ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: oops, mysterious payment actions ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: oops, mysterious payment actions ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: oops, mysterious payment actions ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: oops, mysterious payment actions ...:0
+Sat May 9 00:00:23 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:23 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:23 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:23 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 8 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:23 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-08 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:23 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 8 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:23 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:23 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:23 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Mon May 4 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:23 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:23 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-04 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-08 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:24 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Mon May 4 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:24 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:24 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:24 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:24 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:24 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Fri May 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:24 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:24 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-05-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-05-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:24 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Fri May 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:24 2020 DEBUG Debug: use localhost ...:0
+Sat May 9 00:00:24 2020 DEBUG Debug: Database opened:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:24 2020 DEBUG Debug: gen datily order report ...:0
+Sat May 9 00:00:24 2020 DEBUG Debug: order report gen q_str:  "SELECT * FROM order_tb WHERE store='ipad1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:24 2020 DEBUG Debug: Database Existed:  "n2_order_report_gen_Wed Jan 1 00:00:00 2020" @ "n2":0
+Sat May 9 00:00:24 2020 DEBUG Debug: gen datily payment report ...:0
+Sat May 9 00:00:24 2020 DEBUG Debug: payment report gen q_str:  "SELECT * FROM payment_tb WHERE status='APPROVED' AND store='ipad1@lianup'  AND created_on BETWEEN STR_TO_DATE('2020-01-01 00:00:00', '%Y-%m-%d %H:%i:%s') AND STR_TO_DATE('2020-12-31 23:59:59', '%Y-%m-%d %H:%i:%s')":0
+Sat May 9 00:00:24 2020 DEBUG Warning: QSqlDatabasePrivate::removeDatabase: connection 'n2_order_report_gen_Wed Jan 1 00:00:00 2020' is still in use, all queries will cease to work.:0
+Sat May 9 00:00:24 2020 DEBUG Debug: start day:  QDateTime(2020-05-09 00:00:00.000 Eastern Daylight Time Qt::LocalTime):0
+Sat May 9 00:00:24 2020 DEBUG Debug: end day:  QDateTime(2020-05-09 23:59:59.000 Eastern Daylight Time Qt::LocalTime):0
+Sat May 9 00:00:24 2020 DEBUG Debug: start wek:  QDateTime(2020-05-04 00:00:00.000 Eastern Daylight Time Qt::LocalTime):0
+Sat May 9 00:00:24 2020 DEBUG Debug: end week:  QDateTime(2020-05-09 23:59:59.000 Eastern Daylight Time Qt::LocalTime):0
+Sat May 9 00:00:24 2020 DEBUG Debug: start month:  QDateTime(2020-05-01 00:00:00.000 Eastern Daylight Time Qt::LocalTime):0
+Sat May 9 00:00:24 2020 DEBUG Debug: end month:  QDateTime(2020-05-31 23:59:59.000 Eastern Daylight Time Qt::LocalTime):0
+Sat May 9 00:00:24 2020 DEBUG Debug: start year:  QDateTime(2020-01-01 00:00:00.000 Eastern Standard Time Qt::LocalTime):0
+Sat May 9 00:00:24 2020 DEBUG Debug: end year:  QDateTime(2020-12-31 23:59:59.000 Eastern Standard Time Qt::LocalTime):0
+Sat May 9 00:00:24 2020 DEBUG Debug: day start:  QDateTime(2020-05-09 00:00:00.000 Eastern Daylight Time Qt::LocalTime):0
+Sat May 9 00:00:50 2020 RECEIVED <iq id="qxmpp10561" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:00:50 2020 SENT <iq id="qxmpp10561" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:01:50 2020 RECEIVED <iq id="qxmpp10563" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:01:50 2020 SENT <iq id="qxmpp10563" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:02:50 2020 RECEIVED <iq id="qxmpp10565" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:02:50 2020 SENT <iq id="qxmpp10565" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:03:50 2020 RECEIVED <iq id="qxmpp10567" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:03:50 2020 SENT <iq id="qxmpp10567" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:04:50 2020 RECEIVED <iq id="qxmpp10569" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:04:50 2020 SENT <iq id="qxmpp10569" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:05:24 2020 DEBUG Debug: settle work is working ...:0
+Sat May 9 00:05:50 2020 RECEIVED <iq id="qxmpp10571" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:05:50 2020 SENT <iq id="qxmpp10571" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:06:50 2020 RECEIVED <iq id="qxmpp10573" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:06:50 2020 SENT <iq id="qxmpp10573" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:07:50 2020 RECEIVED <iq id="qxmpp10575" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:07:50 2020 SENT <iq id="qxmpp10575" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:08:50 2020 RECEIVED <iq id="qxmpp10577" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:08:50 2020 SENT <iq id="qxmpp10577" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:09:50 2020 RECEIVED <iq id="qxmpp10579" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:09:50 2020 SENT <iq id="qxmpp10579" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:09:54 2020 RECEIVED <iq id="qxmpp10581" type="get"><time xmlns="urn:xmpp:time"/></iq>
+Sat May 9 00:09:54 2020 SENT <iq id="qxmpp10581" to="station1@lianup/LianUp" type="result"><time xmlns="urn:xmpp:time"><tzo>Z</tzo><utc>2020-05-09T04:09:54.792Z</utc></time></iq>
+Sat May 9 00:10:50 2020 RECEIVED <iq id="qxmpp10583" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:10:50 2020 SENT <iq id="qxmpp10583" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:11:50 2020 RECEIVED <iq id="qxmpp10585" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:11:50 2020 SENT <iq id="qxmpp10585" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:12:50 2020 RECEIVED <iq id="qxmpp10587" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:12:50 2020 SENT <iq id="qxmpp10587" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:13:50 2020 RECEIVED <iq id="qxmpp10589" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:13:50 2020 SENT <iq id="qxmpp10589" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:14:50 2020 RECEIVED <iq id="qxmpp10591" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:14:50 2020 SENT <iq id="qxmpp10591" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:15:50 2020 RECEIVED <iq id="qxmpp10593" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:15:50 2020 SENT <iq id="qxmpp10593" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:16:50 2020 RECEIVED <iq id="qxmpp10595" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:16:50 2020 SENT <iq id="qxmpp10595" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:17:50 2020 RECEIVED <iq id="qxmpp10597" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:17:50 2020 SENT <iq id="qxmpp10597" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:18:50 2020 RECEIVED <iq id="qxmpp10599" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:18:50 2020 SENT <iq id="qxmpp10599" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:19:50 2020 RECEIVED <iq id="qxmpp10601" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:19:50 2020 SENT <iq id="qxmpp10601" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:20:24 2020 DEBUG Debug: settle work is working ...:0
+Sat May 9 00:20:50 2020 RECEIVED <iq id="qxmpp10603" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:20:50 2020 SENT <iq id="qxmpp10603" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:21:50 2020 RECEIVED <iq id="qxmpp10605" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:21:50 2020 SENT <iq id="qxmpp10605" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:22:50 2020 RECEIVED <iq id="qxmpp10607" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:22:50 2020 SENT <iq id="qxmpp10607" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:23:50 2020 RECEIVED <iq id="qxmpp10609" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:23:50 2020 SENT <iq id="qxmpp10609" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:24:50 2020 RECEIVED <iq id="qxmpp10611" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:24:50 2020 SENT <iq id="qxmpp10611" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:25:50 2020 RECEIVED <iq id="qxmpp10613" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:25:50 2020 SENT <iq id="qxmpp10613" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:26:50 2020 RECEIVED <iq id="qxmpp10615" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:26:50 2020 SENT <iq id="qxmpp10615" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:27:50 2020 RECEIVED <iq id="qxmpp10617" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:27:50 2020 SENT <iq id="qxmpp10617" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:28:50 2020 RECEIVED <iq id="qxmpp10619" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:28:50 2020 SENT <iq id="qxmpp10619" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:29:50 2020 RECEIVED <iq id="qxmpp10621" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:29:50 2020 SENT <iq id="qxmpp10621" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:30:50 2020 RECEIVED <iq id="qxmpp10623" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:30:50 2020 SENT <iq id="qxmpp10623" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:31:50 2020 RECEIVED <iq id="qxmpp10625" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:31:50 2020 SENT <iq id="qxmpp10625" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:32:50 2020 RECEIVED <iq id="qxmpp10627" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:32:50 2020 SENT <iq id="qxmpp10627" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:33:50 2020 RECEIVED <iq id="qxmpp10629" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:33:50 2020 SENT <iq id="qxmpp10629" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:34:50 2020 RECEIVED <iq id="qxmpp10631" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:34:50 2020 SENT <iq id="qxmpp10631" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:35:25 2020 DEBUG Debug: settle work is working ...:0
+Sat May 9 00:35:50 2020 RECEIVED <iq id="qxmpp10633" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:35:50 2020 SENT <iq id="qxmpp10633" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:36:50 2020 RECEIVED <iq id="qxmpp10635" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:36:50 2020 SENT <iq id="qxmpp10635" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:37:50 2020 RECEIVED <iq id="qxmpp10637" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:37:50 2020 SENT <iq id="qxmpp10637" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:38:50 2020 RECEIVED <iq id="qxmpp10639" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:38:50 2020 SENT <iq id="qxmpp10639" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:39:50 2020 RECEIVED <iq id="qxmpp10641" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:39:50 2020 SENT <iq id="qxmpp10641" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:40:50 2020 RECEIVED <iq id="qxmpp10643" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:40:50 2020 SENT <iq id="qxmpp10643" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:41:50 2020 RECEIVED <iq id="qxmpp10645" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:41:50 2020 SENT <iq id="qxmpp10645" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:42:50 2020 RECEIVED <iq id="qxmpp10647" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:42:50 2020 SENT <iq id="qxmpp10647" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:43:50 2020 RECEIVED <iq id="qxmpp10649" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:43:50 2020 SENT <iq id="qxmpp10649" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:44:50 2020 RECEIVED <iq id="qxmpp10651" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:44:50 2020 SENT <iq id="qxmpp10651" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:45:50 2020 RECEIVED <iq id="qxmpp10653" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:45:50 2020 SENT <iq id="qxmpp10653" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:46:50 2020 RECEIVED <iq id="qxmpp10655" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:46:50 2020 SENT <iq id="qxmpp10655" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:47:50 2020 RECEIVED <iq id="qxmpp10657" to="lianup" type="get"><ping xmlns="urn:xmpp:ping"/></iq>
+Sat May 9 00:47:50 2020 SENT <iq id="qxmpp10657" to="station1@lianup/LianUp" type="result"/>
+Sat May 9 00:48:30 2020 DEBUG Debug: log file:  "C:/sandbox/f350/v1_release/server_bin\\log\\deamon_2020_05_09_00_48_30_657.txt":0
